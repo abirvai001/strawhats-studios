@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Primary Meta Tags -->
-  <title>App Gallery | eLab Simulator - StrawHats Studios</title>
-  <meta name="title" content="App Gallery | eLab Simulator - StrawHats Studios" />
-  <meta name="description" content="Explore eLab Simulator v2.1 by StrawHats Studios - Interactive MB-102 Breadboard, Real-Time MNA Circuit Solver, and Virtual Instruments for Android." />
+  <title>App Gallery | StrawHats Studios — Sustainable Android Apps & Utilities</title>
+  <meta name="title" content="App Gallery | StrawHats Studios — Sustainable Android Apps & Utilities" />
+  <meta name="description" content="Explore official Android applications by StrawHats Studios: EdgeDock (Smart Popup Tools & Floating Assistant) and eLab (Virtual EEE Circuit Simulator)." />
   <meta name="author" content="StrawHats Studios" />
   <meta name="theme-color" content="#0a0d14" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="eLab Simulator - StrawHats Studios App Gallery" />
-  <meta property="og:description" content="Next-Generation Interactive Breadboard, Circuit Simulation & Virtual Instrument Suite for Android." />
+  <meta property="og:title" content="StrawHats Studios App Gallery" />
+  <meta property="og:description" content="Explore EdgeDock and eLab Simulator — High performance, sustainable Android applications." />
   <meta property="og:image" content="./assets/logo.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="eLab Simulator - StrawHats Studios App Gallery" />
-  <meta property="twitter:description" content="Next-Generation Interactive Breadboard, Circuit Simulation & Virtual Instrument Suite for Android." />
+  <meta property="twitter:title" content="StrawHats Studios App Gallery" />
+  <meta property="twitter:description" content="Explore EdgeDock and eLab Simulator — High performance, sustainable Android applications." />
   <meta property="twitter:image" content="./assets/logo.png" />
 
   <!-- Favicon -->
@@ -48,9 +48,10 @@
               border: 'rgba(255, 255, 255, 0.08)',
               emerald: '#10b981',
               teal: '#14b8a6',
-              cyan: '#06b6d4',
+              cyan: '#00e5ff',
               violet: '#8b5cf6',
               purple: '#a855f7',
+              amber: '#f59e0b',
               muted: '#94a3b8',
               light: '#f1f5f9',
             }
@@ -61,10 +62,10 @@
             mono: ['"Space Grotesk"', 'monospace']
           },
           boxShadow: {
-            'glow-emerald': '0 0 35px -5px rgba(16, 185, 129, 0.25)',
-            'glow-cyan': '0 0 35px -5px rgba(6, 182, 212, 0.25)',
-            'glow-violet': '0 0 35px -5px rgba(139, 92, 246, 0.25)',
-            'card-ambient': '0 10px 30px -10px rgba(0, 0, 0, 0.5)'
+            'glow-emerald': '0 0 35px -5px rgba(16, 185, 129, 0.3)',
+            'glow-cyan': '0 0 35px -5px rgba(0, 229, 255, 0.35)',
+            'glow-violet': '0 0 35px -5px rgba(139, 92, 246, 0.3)',
+            'card-ambient': '0 10px 30px -10px rgba(0, 0, 0, 0.6)'
           },
           animation: {
             'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
@@ -110,37 +111,56 @@
 
     /* Radial Glow Gradients */
     .radial-glow-green {
-      background: radial-gradient(circle at center, rgba(16, 185, 129, 0.15) 0%, rgba(10, 13, 20, 0) 70%);
+      background: radial-gradient(circle at center, rgba(16, 185, 129, 0.16) 0%, rgba(10, 13, 20, 0) 70%);
     }
     .radial-glow-cyan {
-      background: radial-gradient(circle at center, rgba(6, 182, 212, 0.15) 0%, rgba(10, 13, 20, 0) 70%);
+      background: radial-gradient(circle at center, rgba(0, 229, 255, 0.18) 0%, rgba(10, 13, 20, 0) 70%);
     }
     .radial-glow-purple {
-      background: radial-gradient(circle at center, rgba(139, 92, 246, 0.15) 0%, rgba(10, 13, 20, 0) 70%);
+      background: radial-gradient(circle at center, rgba(139, 92, 246, 0.16) 0%, rgba(10, 13, 20, 0) 70%);
     }
 
     /* Glassmorphism Card Style */
     .glass-card {
-      background: rgba(19, 25, 42, 0.65);
+      background: rgba(19, 25, 42, 0.7);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     .glass-card:hover {
-      border-color: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.18);
     }
 
     .glass-nav {
-      background: rgba(10, 13, 20, 0.85);
+      background: rgba(10, 13, 20, 0.88);
       backdrop-filter: blur(20px);
       -webkit-backdrop-filter: blur(20px);
       border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .text-gradient-cyan {
-      background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 50%, #10b981 100%);
+      background: linear-gradient(135deg, #00e5ff 0%, #38bdf8 50%, #10b981 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-emerald {
+      background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #06b6d4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-purple {
+      background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 50%, #00e5ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .tab-btn.active {
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(0, 229, 255, 0.5);
+      color: #ffffff;
+      box-shadow: 0 0 20px -5px rgba(0, 229, 255, 0.3);
     }
   </style>
 </head>
@@ -148,8 +168,9 @@
 <body class="bg-brand-bg text-brand-light font-sans antialiased selection:bg-brand-emerald selection:text-brand-bg min-h-screen relative overflow-x-hidden">
 
   <!-- Ambient Decorative Light Blobs -->
-  <div class="fixed top-0 left-1/4 w-[600px] h-[600px] radial-glow-cyan rounded-full pointer-events-none -z-10 animate-pulse-slow"></div>
+  <div class="fixed top-0 left-1/4 w-[650px] h-[650px] radial-glow-cyan rounded-full pointer-events-none -z-10 animate-pulse-slow"></div>
   <div class="fixed top-1/2 right-10 w-[550px] h-[550px] radial-glow-green rounded-full pointer-events-none -z-10 animate-float-slow"></div>
+  <div class="fixed bottom-10 left-10 w-[500px] h-[500px] radial-glow-purple rounded-full pointer-events-none -z-10"></div>
   <div class="fixed inset-0 bg-grid-pattern opacity-40 pointer-events-none -z-20"></div>
 
   <!-- ==================== HEADER / NAVBAR ==================== -->
@@ -157,33 +178,38 @@
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo & Title -->
-      <a href="index.html#hero" class="flex items-center gap-3.5 group focus:outline-none rounded-lg">
+      <a href="index.html" class="flex items-center gap-3.5 group focus:outline-none rounded-lg">
         <div class="relative flex items-center justify-center w-11 h-11 rounded-xl bg-gradient-to-br from-brand-card to-brand-surface border border-white/10 shadow-md group-hover:border-brand-emerald/50 transition-colors overflow-hidden">
           <img src="./assets/logo.png" alt="StrawHats Studios Logo" class="w-8 h-8 object-contain transition-transform duration-300 group-hover:scale-110" />
         </div>
         <div class="flex flex-col">
           <span class="text-lg font-extrabold tracking-tight text-white group-hover:text-brand-emerald transition-colors">StrawHats Studios</span>
-          <span class="text-[11px] font-medium text-brand-muted tracking-wider uppercase">App Gallery</span>
+          <span class="text-[11px] font-medium text-brand-muted tracking-wider uppercase">Official App Gallery</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
       <nav class="hidden md:flex items-center gap-2">
-        <a href="index.html" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all flex items-center gap-1.5">
+        <a href="index.html" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all flex items-center gap-1.5">
           <i data-lucide="arrow-left" class="w-4 h-4 text-brand-muted"></i>
           <span>Main Site</span>
         </a>
-        <a href="index.html#pillars" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">Vision & Pillars</a>
-        <a href="#overview" class="px-4 py-2 text-sm font-semibold text-brand-cyan bg-brand-cyan/10 border border-brand-cyan/20 rounded-lg transition-all">eLab Simulator</a>
-        <a href="#screenshots" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">Screenshots</a>
-        <a href="#specs" class="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">Specs</a>
+        <a href="#featured-apps" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">All Apps</a>
+        <a href="#edgedock" class="px-3.5 py-2 text-sm font-semibold text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-all flex items-center gap-1.5">
+          <i data-lucide="zap" class="w-4 h-4"></i>
+          <span>EdgeDock</span>
+        </a>
+        <a href="#elab" class="px-3.5 py-2 text-sm font-semibold text-emerald-300 hover:bg-emerald-500/10 rounded-lg transition-all flex items-center gap-1.5">
+          <i data-lucide="cpu" class="w-4 h-4"></i>
+          <span>eLab Simulator</span>
+        </a>
       </nav>
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-3">
-        <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all transform hover:-translate-y-0.5">
+        <a href="#featured-apps" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 shadow-glow-emerald transition-all transform hover:-translate-y-0.5">
           <i data-lucide="download" class="w-4 h-4"></i>
-          <span>Download APK</span>
+          <span>Get Apps</span>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
@@ -200,280 +226,408 @@
         <i data-lucide="arrow-left" class="w-4 h-4 text-brand-muted"></i>
         <span>Back to Main Site</span>
       </a>
-      <a href="#overview" class="mobile-link text-base font-medium text-brand-cyan hover:text-cyan-300 py-2 border-b border-white/[0.04]">eLab Overview & Download</a>
-      <a href="#screenshots" class="mobile-link text-base font-medium text-slate-200 hover:text-brand-emerald py-2 border-b border-white/[0.04]">Visual Tour & Screenshots</a>
-      <a href="#specs" class="mobile-link text-base font-medium text-slate-200 hover:text-brand-emerald py-2">Technical Specs</a>
-      <div class="pt-2">
-        <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="w-full py-3 rounded-xl text-center text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 block shadow-glow-emerald">
-          Download eLab APK (v2.1)
-        </a>
-      </div>
+      <a href="#featured-apps" class="mobile-link text-base font-medium text-slate-200 hover:text-brand-emerald py-2 border-b border-white/[0.04]">All Gallery Apps</a>
+      <a href="#edgedock" class="mobile-link text-base font-medium text-cyan-300 hover:text-cyan-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
+        <i data-lucide="zap" class="w-4 h-4"></i>
+        <span>EdgeDock (Smart Popup Tools)</span>
+      </a>
+      <a href="#elab" class="mobile-link text-base font-medium text-emerald-300 hover:text-emerald-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
+        <i data-lucide="cpu" class="w-4 h-4"></i>
+        <span>eLab (Circuit Simulator)</span>
+      </a>
     </div>
   </header>
 
   <main class="pt-24 md:pt-32">
 
-    <!-- ==================== ELAB HERO SECTION ==================== -->
-    <section id="overview" class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <!-- ==================== GALLERY HERO ==================== -->
+    <section class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 text-center">
       
-      <div class="glass-card rounded-3xl p-8 sm:p-14 border border-brand-cyan/30 relative overflow-hidden shadow-glow-cyan text-center">
+      <!-- Studio Pill Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full glass-card border border-brand-cyan/30 text-xs font-semibold text-cyan-300 mb-6 shadow-glow-cyan">
+        <span class="flex h-2 w-2 relative">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
+        </span>
+        <span class="tracking-wide">Official Application Suite</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
+        StrawHats Studios <span class="text-gradient-cyan">App Gallery</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-inter leading-relaxed mb-10">
+        Engineered with precision for peak battery efficiency, lightweight footprints, and zero bloatware. Download and test our latest Android applications directly.
+      </p>
+
+      <!-- App Switcher Filter Pills -->
+      <div class="inline-flex p-1.5 rounded-2xl glass-card border border-white/10 gap-2 mb-12 shadow-card-ambient flex-wrap justify-center">
+        <button onclick="filterGallery('all')" id="tab-all" class="tab-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2">
+          <i data-lucide="layers" class="w-4 h-4"></i>
+          <span>All Applications (2)</span>
+        </button>
+        <button onclick="filterGallery('edgedock')" id="tab-edgedock" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
+          <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i>
+          <span>EdgeDock ⚡</span>
+        </button>
+        <button onclick="filterGallery('elab')" id="tab-elab" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
+          <i data-lucide="cpu" class="w-4 h-4 text-emerald-400"></i>
+          <span>eLab Simulator 🔬</span>
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ==================== FEATURED APPS GRID ==================== -->
+    <section id="featured-apps" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- App Icon -->
-        <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-3xl bg-black/60 border-2 border-brand-cyan/40 p-2 mx-auto mb-6 shadow-glow-cyan overflow-hidden">
-          <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/app_icon.jpg" alt="eLab Icon" class="w-full h-full object-cover rounded-2xl" onerror="this.src='./assets/logo.png'" />
+        <!-- ================= CARD 1: EDGEDOCK ================= -->
+        <div id="card-edgedock" class="app-card glass-card rounded-3xl p-7 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 shadow-glow-cyan relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0c1220] to-[#16203a] border-2 border-cyan-400/50 p-2 shadow-glow-cyan flex items-center justify-center overflow-hidden">
+                <img src="./assets/edgedock_icon.png" alt="EdgeDock Icon" class="w-full h-full object-contain rounded-xl" onerror="this.src='./assets/logo.png'" />
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  <span>v1.0.2 Latest</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  2.5 MB • Android 8.0+
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-cyan-300 transition-colors mb-2">
+              EdgeDock — <span class="text-cyan-400">Smart Popup Tools</span>
+            </h3>
+            <p class="text-xs font-semibold text-purple-300 tracking-wide uppercase mb-3">
+              Multitasking Assistant & Floating Utility Suite
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              Gesture-activated floating sidebar, draggable assistive touch ball, live RAM memory booster, fine-grained volume hubs, and immediate screen controls with full R8 reverse-engineering defense.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="panel-right" class="w-3.5 h-3.5 text-cyan-400"></i> Floating Dock
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="cpu" class="w-3.5 h-3.5 text-emerald-400"></i> RAM Booster
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-purple-400"></i> Anti-Tamper
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-v1.0.2.apk" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download APK (2.5 MB)</span>
+            </a>
+            <a href="#edgedock" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <span>Details & Specs</span>
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </a>
+          </div>
         </div>
 
-        <!-- Studio Release Tag -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-brand-cyan/10 border border-brand-cyan/30 text-xs font-semibold text-cyan-300 mb-4">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-brand-cyan"></i>
-          <span>StrawHats Studios Official Release</span>
-        </div>
+        <!-- ================= CARD 2: ELAB SIMULATOR ================= -->
+        <div id="card-elab" class="app-card glass-card rounded-3xl p-7 border border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 shadow-glow-emerald relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-black/60 border-2 border-emerald-400/50 p-1.5 shadow-glow-emerald flex items-center justify-center overflow-hidden">
+                <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/app_icon.jpg" alt="eLab Icon" class="w-full h-full object-cover rounded-xl" onerror="this.src='./assets/logo.png'" />
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
+                  <span>v2.1 Release</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  5.3 MB • Android 7.0+
+                </span>
+              </div>
+            </div>
 
-        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-4">
-          eLab — <span class="text-gradient-cyan">Virtual EEE Lab Simulator</span>
-        </h1>
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-emerald-300 transition-colors mb-2">
+              eLab — <span class="text-emerald-400">EEE Lab Simulator</span>
+            </h3>
+            <p class="text-xs font-semibold text-teal-300 tracking-wide uppercase mb-3">
+              Breadboard, Circuit Engine & Instruments
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              Complete electrical engineering workbench with authentic MB-102 solderless breadboard, real-time Modified Nodal Analysis (MNA) solver, dual-channel oscilloscope, and precision digital multimeter.
+            </p>
 
-        <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto font-inter leading-relaxed mb-6">
-          Next-Generation Interactive MB-102 Breadboard, Real-Time Circuit Simulation & Virtual Instrument Suite for Android.
-        </p>
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="grid" class="w-3.5 h-3.5 text-emerald-400"></i> MB-102 Board
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="activity" class="w-3.5 h-3.5 text-teal-400"></i> Dual Oscilloscope
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="gauge" class="w-3.5 h-3.5 text-amber-400"></i> Digital Multimeter
+              </span>
+            </div>
+          </div>
 
-        <!-- Tech & Version Badges -->
-        <div class="flex flex-wrap justify-center gap-2.5 mb-8">
-          <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-teal/15 text-teal-300 border border-brand-teal/30">
-            <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
-            <span>Version v2.1</span>
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-            <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
-            <span>Android 7.0+</span>
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-white/[0.06] text-slate-300 border border-white/10">
-            <i data-lucide="package" class="w-3.5 h-3.5"></i>
-            <span>5.3 MB APK</span>
-          </span>
-          <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold bg-brand-violet/15 text-violet-300 border border-brand-violet/30">
-            <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
-            <span>100% Offline & Safe</span>
-          </span>
-        </div>
-
-        <!-- Description Paragraph -->
-        <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto font-inter leading-relaxed mb-10">
-          <strong>eLab</strong> transforms your Android device into a complete electrical engineering workbench with an authentic <strong>MB-102 Solderless Breadboard</strong>, a real-time <strong>Modified Nodal Analysis (MNA) Circuit Solver</strong>, dual-channel digital <strong>Oscilloscope</strong>, and precision <strong>Digital Multimeter (DMM)</strong>. Wire circuits, analyze transients, and test components with zero risk of hardware burnouts.
-        </p>
-
-        <!-- Download CTAs -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-lg mx-auto">
-          <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all transform hover:-translate-y-0.5" download>
-            <i data-lucide="download" class="w-4 h-4"></i>
-            <span>Download APK (v2.1 • 5.3 MB)</span>
-          </a>
-          <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-sm font-semibold text-slate-200 glass-card hover:bg-white/[0.08] hover:text-white border border-white/10 transition-all transform hover:-translate-y-0.5">
-            <i data-lucide="github" class="w-4 h-4"></i>
-            <span>GitHub Repository</span>
-          </a>
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all" download>
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download APK (5.3 MB)</span>
+            </a>
+            <a href="#elab" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <span>Details & Specs</span>
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </a>
+          </div>
         </div>
 
       </div>
 
     </section>
 
-    <!-- ==================== SCREENSHOTS / VISUAL TOUR ==================== -->
-    <section id="screenshots" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ==================== DETAILED SECTION 1: EDGEDOCK ==================== -->
+    <section id="edgedock" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/[0.08]">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-xs font-semibold text-emerald-400 mb-3">
-          <i data-lucide="image" class="w-3.5 h-3.5"></i>
-          <span>VISUAL TOUR</span>
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">App Highlights & Workspaces</h2>
-        <p class="text-brand-muted mt-3 text-sm font-inter">Explore the core workspaces and digital measurement instruments inside eLab v2.1.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-cyan-500/30 shadow-glow-cyan mb-12">
         
-        <!-- Screenshot 1 -->
-        <div class="glass-card rounded-3xl overflow-hidden border border-white/[0.08] hover:border-brand-cyan/40 transition-all duration-300 hover:-translate-y-1 group">
-          <div class="h-48 w-full bg-black/60 overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
-            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/01_menu.png" alt="eLab Main Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
+        <!-- Header Ribbon -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-[#0c1220] to-[#151e36] border-2 border-cyan-400/50 p-2 shadow-glow-cyan flex items-center justify-center shrink-0">
+              <img src="./assets/edgedock_icon.png" alt="EdgeDock Icon" class="w-full h-full object-contain rounded-xl" />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30 mb-1.5">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Flagship Android Utility</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">EdgeDock — Smart Popup Tools</h2>
+              <p class="text-xs sm:text-sm text-slate-400">Version 1.0.2 • Package: <code class="text-cyan-300 font-mono">ss.edgedock</code></p>
+            </div>
           </div>
-          <div class="p-6">
-            <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2">
-              <i data-lucide="layout" class="w-4 h-4 text-brand-cyan"></i>
-              <span>Landscape Hub & Dashboard</span>
-            </h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-inter">
-              Clean glassmorphic navigation hub with experiment session controls, component manuals, and 1-tap workspace launching.
-            </p>
+
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-v1.0.2.apk" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download APK (2.5 MB)</span>
+            </a>
+            <a href="edgedock.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 glass-card hover:bg-white/[0.08] hover:text-white border border-white/10 transition-all">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Dedicated Page</span>
+            </a>
           </div>
         </div>
 
-        <!-- Screenshot 2 -->
-        <div class="glass-card rounded-3xl overflow-hidden border border-white/[0.08] hover:border-brand-emerald/40 transition-all duration-300 hover:-translate-y-1 group">
-          <div class="h-48 w-full bg-black/60 overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
-            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/02_breadboard_workspace.png" alt="Breadboard Workspace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
+        <!-- Banner Preview -->
+        <div class="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
+          <img src="./assets/edgedock_banner.png" alt="EdgeDock Banner" class="w-full h-auto object-cover" onerror="this.src='https://raw.githubusercontent.com/abirvai001/EdgeDock/main/screenshots/banner.png'" />
+        </div>
+
+        <!-- Feature Columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-3">
+              <i data-lucide="panel-right" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Floating Edge Dock</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Swipe-activated neon edge bar with custom position anchoring and adjustable trigger sensitivity.</p>
           </div>
-          <div class="p-6">
-            <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2">
-              <i data-lucide="grid" class="w-4 h-4 text-brand-emerald"></i>
-              <span>MB-102 Solderless Breadboard</span>
-            </h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-inter">
-              Authentic 830-tie point breadboard with auto-snap terminal placing, flexible multi-color jumper wires, and active continuity detection.
-            </p>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+              <i data-lucide="move" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Assistive Touch Controller</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Draggable floating action ball with quick system navigation, screenshot shortcuts, and app launcher.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+              <i data-lucide="cpu" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">RAM & Speed Booster</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Real-time memory usage gauge with 1-tap memory cleanup and cache flush for butter-smooth multitasking.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+              <i data-lucide="volume-2" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Multi-Stream Volume Hub</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Individual sliders for Media, Ringtone, Notifications, and Alarms with instant mute presets.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-3">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Anti-Tamper & R8 Protection</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Debugger blocking, TracerPid anti-tracing, Frida detection, and advanced code obfuscation.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-3">
+              <i data-lucide="refresh-cw" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">In-App GitHub OTA Updates</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Automated seamless release checks and 1-tap APK updating directly inside the application.</p>
           </div>
         </div>
 
-        <!-- Screenshot 3 -->
-        <div class="glass-card rounded-3xl overflow-hidden border border-white/[0.08] hover:border-brand-violet/40 transition-all duration-300 hover:-translate-y-1 group">
-          <div class="h-48 w-full bg-black/60 overflow-hidden flex items-center justify-center border-b border-white/[0.06]">
-            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/03_oscilloscope_multimeter.png" alt="Oscilloscope and Multimeter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
-          </div>
-          <div class="p-6">
-            <h3 class="text-base font-bold text-white mb-2 flex items-center gap-2">
-              <i data-lucide="activity" class="w-4 h-4 text-brand-violet"></i>
-              <span>Dual Oscilloscope & DMM</span>
-            </h3>
-            <p class="text-xs text-slate-400 leading-relaxed font-inter">
-              Real-time CH1/CH2 waveform visualizer with variable timebase scaling, volts/div, trigger modes, and interactive multi-probe multimeter.
-            </p>
-          </div>
+        <!-- Technical Specs Table -->
+        <div class="rounded-2xl overflow-hidden border border-white/[0.08] bg-black/20">
+          <table class="w-full text-left text-xs font-inter">
+            <tbody class="divide-y divide-white/[0.06]">
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white w-1/3">Package Name</td>
+                <td class="px-5 py-3 text-cyan-300 font-mono">ss.edgedock</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Version & Code</td>
+                <td class="px-5 py-3 text-slate-300">v1.0.2 (Code 2)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">APK File Size</td>
+                <td class="px-5 py-3 text-emerald-400 font-semibold">2.5 MB (Optimized)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Compatibility</td>
+                <td class="px-5 py-3 text-slate-300">Android 8.0 (Oreo) up to Android 15 (API 36)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">GitHub Repository</td>
+                <td class="px-5 py-3">
+                  <a href="https://github.com/abirvai001/EdgeDock" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline flex items-center gap-1">
+                    <span>abirvai001/EdgeDock</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       </div>
 
     </section>
 
-    <!-- ==================== CORE ENGINE CAPABILITIES & SPECS ==================== -->
-    <section id="specs" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- ==================== DETAILED SECTION 2: ELAB SIMULATOR ==================== -->
+    <section id="elab" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/[0.08]">
       
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-white/[0.04] border border-white/10 text-xs font-semibold text-cyan-400 mb-3">
-          <i data-lucide="cpu" class="w-3.5 h-3.5"></i>
-          <span>ENGINEERING SPECIFICATIONS</span>
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Core Engine Capabilities</h2>
-        <p class="text-brand-muted mt-3 text-sm font-inter">Precision mathematical modeling and real-time physical instrument simulation.</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-emerald-500/30 shadow-glow-emerald mb-12">
         
-        <!-- Feature 1 -->
-        <div class="glass-card p-7 rounded-3xl border border-white/[0.07] space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 border border-brand-cyan/30 flex items-center justify-center text-brand-cyan">
-            <i data-lucide="cpu" class="w-6 h-6"></i>
+        <!-- Header Ribbon -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-2xl bg-black/60 border-2 border-emerald-400/50 p-1.5 shadow-glow-emerald flex items-center justify-center shrink-0">
+              <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/app_icon.jpg" alt="eLab Icon" class="w-full h-full object-cover rounded-xl" onerror="this.src='./assets/logo.png'" />
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30 mb-1.5">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Virtual Engineering Simulator</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">eLab — Virtual EEE Lab Simulator</h2>
+              <p class="text-xs sm:text-sm text-slate-400">Version 2.1 • Solderless Breadboard & Real-Time MNA Solver</p>
+            </div>
           </div>
-          <h3 class="text-lg font-bold text-white">Real-Time MNA Circuit Engine</h3>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-inter">
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
-              <span>High-precision Modified Nodal Analysis (MNA) matrix solver</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
-              <span>Trapezoidal integration for dynamic capacitors & inductors</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
-              <span>Instantaneous node voltage & branch loop current computation</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-cyan shrink-0 mt-0.5"></i>
-              <span>Variable DC power supply & AC signal generator (Sine/Square/Triangle)</span>
-            </li>
-          </ul>
+
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all" download>
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download APK (5.3 MB)</span>
+            </a>
+            <a href="elab.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 glass-card hover:bg-white/[0.08] hover:text-white border border-white/10 transition-all">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Dedicated Page</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Feature 2 -->
-        <div class="glass-card p-7 rounded-3xl border border-white/[0.07] space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-brand-emerald/30 flex items-center justify-center text-brand-emerald">
-            <i data-lucide="activity" class="w-6 h-6"></i>
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/01_menu.png" alt="eLab Menu Dashboard" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
+            <div class="p-3 text-center text-xs font-semibold text-slate-300">Hub & Dashboard</div>
           </div>
-          <h3 class="text-lg font-bold text-white">Dual-Channel Digital Oscilloscope</h3>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-inter">
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-emerald shrink-0 mt-0.5"></i>
-              <span>Dual trace channels (CH1 Yellow, CH2 Blue)</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-emerald shrink-0 mt-0.5"></i>
-              <span>Variable timebase scaling: 10µs/div to 500ms/div</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-emerald shrink-0 mt-0.5"></i>
-              <span>Voltage attenuation: 10mV/div to 20V/div</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-emerald shrink-0 mt-0.5"></i>
-              <span>Trigger modes: AUTO, NORM, and SINGLE edge capture</span>
-            </li>
-          </ul>
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/02_breadboard_workspace.png" alt="Breadboard Workspace" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
+            <div class="p-3 text-center text-xs font-semibold text-slate-300">MB-102 Breadboard</div>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <img src="https://raw.githubusercontent.com/abirvai001/eLab-Virtual-eee-lab-simulator/main/screenshots/03_oscilloscope_multimeter.png" alt="Oscilloscope and Multimeter" class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300" onerror="this.src='./assets/logo.png'" />
+            <div class="p-3 text-center text-xs font-semibold text-slate-300">Oscilloscope & DMM</div>
+          </div>
         </div>
 
-        <!-- Feature 3 -->
-        <div class="glass-card p-7 rounded-3xl border border-white/[0.07] space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
-            <i data-lucide="gauge" class="w-6 h-6"></i>
+        <!-- Engine Specs Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-8">
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06] space-y-2">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+              <i data-lucide="cpu" class="w-4 h-4 text-emerald-400"></i>
+              <span>High Precision MNA Solver</span>
+            </h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">
+              Full matrix equation solving for linear & nonlinear nodes, dynamic trapezoidal integration for reactive components (inductors & capacitors), and live AC/DC generation.
+            </p>
           </div>
-          <h3 class="text-lg font-bold text-white">Precision Digital Multimeter (DMM)</h3>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-inter">
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-              <span>4 measurement modes: DCV, ACV, DCA, and Resistance (Ω)</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-              <span>Interactive movable probes with color-coded leads</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-              <span>High-precision 4-digit auto-ranging digital LCD readout</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-              <span>Built-in continuity buzzer and diode forward drop test</span>
-            </li>
-          </ul>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06] space-y-2">
+            <h4 class="text-sm font-bold text-white flex items-center gap-2">
+              <i data-lucide="activity" class="w-4 h-4 text-teal-400"></i>
+              <span>Dual-Channel Digital Scope</span>
+            </h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">
+              10µs/div to 500ms/div timebase, 10mV to 20V attenuation, AUTO/NORM/SINGLE trigger modes, and precision digital multimeter auto-ranging readout.
+            </p>
+          </div>
         </div>
 
-        <!-- Feature 4 -->
-        <div class="glass-card p-7 rounded-3xl border border-white/[0.07] space-y-4">
-          <div class="w-12 h-12 rounded-2xl bg-violet-500/10 border border-brand-violet/30 flex items-center justify-center text-brand-violet">
-            <i data-lucide="package-check" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-lg font-bold text-white">Rich Electronic Component Library</h3>
-          <ul class="space-y-2 text-xs sm:text-sm text-slate-300 font-inter">
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-violet shrink-0 mt-0.5"></i>
-              <span>Passives: Resistors (E12/E24 series), Capacitors, Inductors</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-violet shrink-0 mt-0.5"></i>
-              <span>Semiconductors: Diodes, Zener Diodes, LEDs, NPN/PNP Transistors</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-violet shrink-0 mt-0.5"></i>
-              <span>Logic ICs: 7400 NAND, 7402 NOR, 7404 NOT, 7408 AND, 7432 OR</span>
-            </li>
-            <li class="flex items-start gap-2">
-              <i data-lucide="check" class="w-4 h-4 text-brand-violet shrink-0 mt-0.5"></i>
-              <span>Op-Amps: LM741 inverting & non-inverting amplifier configurations</span>
-            </li>
-          </ul>
+        <!-- Technical Specs Table -->
+        <div class="rounded-2xl overflow-hidden border border-white/[0.08] bg-black/20">
+          <table class="w-full text-left text-xs font-inter">
+            <tbody class="divide-y divide-white/[0.06]">
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white w-1/3">Version</td>
+                <td class="px-5 py-3 text-emerald-300 font-mono">v2.1 Official Release</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">APK File Size</td>
+                <td class="px-5 py-3 text-emerald-400 font-semibold">5.3 MB</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Compatibility</td>
+                <td class="px-5 py-3 text-slate-300">Android 7.0 (Nougat) or higher</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">GitHub Repository</td>
+                <td class="px-5 py-3">
+                  <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:underline flex items-center gap-1">
+                    <span>abirvai001/eLab-Virtual-eee-lab-simulator</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
-      </div>
-
-      <!-- System Requirements Card -->
-      <div class="glass-card p-8 rounded-3xl border border-white/10 text-center">
-        <h3 class="text-lg font-bold text-white mb-2">System Compatibility</h3>
-        <p class="text-slate-400 text-xs sm:text-sm max-w-xl mx-auto mb-6">
-          Requires Android 7.0 (Nougat) or higher. Optimized for ARM64 & x86_64 architectures with hardware acceleration.
-        </p>
-        <a href="https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all" download>
-          <i data-lucide="download" class="w-4 h-4"></i>
-          <span>Download eLab v2.1 (5.3 MB)</span>
-        </a>
       </div>
 
     </section>
@@ -491,7 +645,7 @@
           <img src="./assets/logo.png" alt="StrawHats Studios" class="w-8 h-8 object-contain" />
           <div class="flex flex-col">
             <span class="text-base font-extrabold text-white">StrawHats Studios</span>
-            <span class="text-xs text-slate-400">eLab Virtual EEE Lab Simulator</span>
+            <span class="text-xs text-slate-400">Sustainable Android Apps & AI Innovations</span>
           </div>
         </div>
 
@@ -499,7 +653,8 @@
         <div class="flex items-center gap-6 text-xs text-slate-400 font-medium">
           <a href="index.html" class="hover:text-brand-emerald transition-colors">Main Site</a>
           <a href="index.html#pillars" class="hover:text-brand-emerald transition-colors">Pillars</a>
-          <a href="#overview" class="hover:text-brand-cyan transition-colors">eLab App</a>
+          <a href="#edgedock" class="hover:text-cyan-300 transition-colors">EdgeDock</a>
+          <a href="#elab" class="hover:text-emerald-300 transition-colors">eLab Simulator</a>
           <a href="index.html#contact" class="hover:text-brand-emerald transition-colors">Contact</a>
         </div>
 
@@ -536,7 +691,7 @@
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
 
-    mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuBtn?.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
 
@@ -555,6 +710,32 @@
         header.classList.remove('shadow-xl', 'bg-opacity-95');
       }
     });
+
+    // Gallery Filter Logic
+    function filterGallery(type) {
+      const cardEdgedock = document.getElementById('card-edgedock');
+      const cardElab = document.getElementById('card-elab');
+      const tabAll = document.getElementById('tab-all');
+      const tabEdgedock = document.getElementById('tab-edgedock');
+      const tabElab = document.getElementById('tab-elab');
+
+      // Update button classes
+      [tabAll, tabEdgedock, tabElab].forEach(btn => btn?.classList.remove('active'));
+
+      if (type === 'all') {
+        tabAll?.classList.add('active');
+        if (cardEdgedock) cardEdgedock.style.display = 'flex';
+        if (cardElab) cardElab.style.display = 'flex';
+      } else if (type === 'edgedock') {
+        tabEdgedock?.classList.add('active');
+        if (cardEdgedock) cardEdgedock.style.display = 'flex';
+        if (cardElab) cardElab.style.display = 'none';
+      } else if (type === 'elab') {
+        tabElab?.classList.add('active');
+        if (cardEdgedock) cardEdgedock.style.display = 'none';
+        if (cardElab) cardElab.style.display = 'flex';
+      }
+    }
   </script>
 </body>
 </html>
