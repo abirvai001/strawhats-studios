@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Primary Meta Tags -->
-  <title>App Gallery | StrawHats Studios — Sustainable Android Apps & Utilities</title>
-  <meta name="title" content="App Gallery | StrawHats Studios — Sustainable Android Apps & Utilities" />
-  <meta name="description" content="Explore official Android applications by StrawHats Studios: EdgeDock (Smart Popup Tools & Floating Assistant) and eLab (Virtual EEE Circuit Simulator)." />
+  <title>Software Portfolio | StrawHats Studios — Android Apps & Web Applications</title>
+  <meta name="title" content="Software Portfolio | StrawHats Studios — Android Apps & Web Applications" />
+  <meta name="description" content="Explore official software projects by StrawHats Studios: Android applications (EdgeDock, eLab Simulator) and modern Web platforms (TrendingOnBASE, Grand Line Wallpapers, MangaFlow, Based Bangla)." />
   <meta name="author" content="StrawHats Studios" />
   <meta name="theme-color" content="#0a0d14" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="StrawHats Studios App Gallery" />
-  <meta property="og:description" content="Explore EdgeDock and eLab Simulator — High performance, sustainable Android applications." />
+  <meta property="og:title" content="StrawHats Studios Software Portfolio" />
+  <meta property="og:description" content="Explore EdgeDock, eLab Simulator, TrendingOnBASE, and Grand Line Wallpapers — Next-gen Android apps and modern web platforms." />
   <meta property="og:image" content="./assets/logo.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="StrawHats Studios App Gallery" />
-  <meta property="twitter:description" content="Explore EdgeDock and eLab Simulator — High performance, sustainable Android applications." />
+  <meta property="twitter:title" content="StrawHats Studios Software Portfolio" />
+  <meta property="twitter:description" content="Explore EdgeDock, eLab Simulator, TrendingOnBASE, and Grand Line Wallpapers — Next-gen Android apps and modern web platforms." />
   <meta property="twitter:image" content="./assets/logo.png" />
 
   <!-- Favicon -->
@@ -184,32 +184,38 @@
         </div>
         <div class="flex flex-col">
           <span class="text-lg font-extrabold tracking-tight text-white group-hover:text-brand-emerald transition-colors">StrawHats Studios</span>
-          <span class="text-[11px] font-medium text-brand-muted tracking-wider uppercase">Official App Gallery</span>
+          <span class="text-[11px] font-medium text-brand-muted tracking-wider uppercase">Software Company Portfolio</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
       <nav class="hidden md:flex items-center gap-2">
-        <a href="index.html" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all flex items-center gap-1.5">
-          <i data-lucide="arrow-left" class="w-4 h-4 text-brand-muted"></i>
+        <a href="index.html" class="px-3 py-2 text-xs font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all flex items-center gap-1.5">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5 text-brand-muted"></i>
           <span>Main Site</span>
         </a>
-        <a href="#featured-apps" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">All Apps</a>
-        <a href="#edgedock" class="px-3.5 py-2 text-sm font-semibold text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-all flex items-center gap-1.5">
-          <i data-lucide="zap" class="w-4 h-4"></i>
+        <a href="#featured-apps" onclick="filterGallery('all')" class="px-3 py-2 text-xs font-medium text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">All Software</a>
+        <a href="#featured-apps" onclick="filterGallery('android')" class="px-3 py-2 text-xs font-semibold text-cyan-300 hover:bg-cyan-500/10 rounded-lg transition-all flex items-center gap-1.5">
+          <i data-lucide="smartphone" class="w-3.5 h-3.5"></i>
+          <span>Android (2)</span>
+        </a>
+        <a href="#featured-apps" onclick="filterGallery('web')" class="px-3 py-2 text-xs font-semibold text-blue-300 hover:bg-blue-500/10 rounded-lg transition-all flex items-center gap-1.5">
+          <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+          <span>Web Apps (4)</span>
+        </a>
+        <a href="#edgedock" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">
           <span>EdgeDock</span>
         </a>
-        <a href="#elab" class="px-3.5 py-2 text-sm font-semibold text-emerald-300 hover:bg-emerald-500/10 rounded-lg transition-all flex items-center gap-1.5">
-          <i data-lucide="cpu" class="w-4 h-4"></i>
-          <span>eLab Simulator</span>
+        <a href="#trendingonbase" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-white hover:bg-white/[0.04] rounded-lg transition-all">
+          <span>TrendingOnBASE</span>
         </a>
       </nav>
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-3">
         <a href="#featured-apps" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-white bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 hover:from-emerald-500 hover:to-cyan-500 shadow-glow-emerald transition-all transform hover:-translate-y-0.5">
-          <i data-lucide="download" class="w-4 h-4"></i>
-          <span>Get Apps</span>
+          <i data-lucide="layers" class="w-4 h-4"></i>
+          <span>Explore Projects</span>
         </a>
 
         <!-- Mobile Menu Toggle Button -->
@@ -226,14 +232,14 @@
         <i data-lucide="arrow-left" class="w-4 h-4 text-brand-muted"></i>
         <span>Back to Main Site</span>
       </a>
-      <a href="#featured-apps" class="mobile-link text-base font-medium text-slate-200 hover:text-brand-emerald py-2 border-b border-white/[0.04]">All Gallery Apps</a>
-      <a href="#edgedock" class="mobile-link text-base font-medium text-cyan-300 hover:text-cyan-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
-        <i data-lucide="zap" class="w-4 h-4"></i>
-        <span>EdgeDock (Smart Popup Tools)</span>
+      <a href="#featured-apps" onclick="filterGallery('all')" class="mobile-link text-base font-medium text-slate-200 hover:text-brand-emerald py-2 border-b border-white/[0.04]">All Software (6)</a>
+      <a href="#featured-apps" onclick="filterGallery('android')" class="mobile-link text-base font-medium text-cyan-300 hover:text-cyan-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
+        <i data-lucide="smartphone" class="w-4 h-4"></i>
+        <span>Android Apps (2)</span>
       </a>
-      <a href="#elab" class="mobile-link text-base font-medium text-emerald-300 hover:text-emerald-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
-        <i data-lucide="cpu" class="w-4 h-4"></i>
-        <span>eLab (Circuit Simulator)</span>
+      <a href="#featured-apps" onclick="filterGallery('web')" class="mobile-link text-base font-medium text-blue-300 hover:text-blue-200 py-2 border-b border-white/[0.04] flex items-center gap-2">
+        <i data-lucide="globe" class="w-4 h-4"></i>
+        <span>Web Projects (4)</span>
       </a>
     </div>
   </header>
@@ -249,30 +255,30 @@
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-400"></span>
         </span>
-        <span class="tracking-wide">Official Application Suite</span>
+        <span class="tracking-wide">Software Engineering Portfolio</span>
       </div>
 
       <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white mb-6">
-        StrawHats Studios <span class="text-gradient-cyan">App Gallery</span>
+        StrawHats Studios <span class="text-gradient-cyan">Portfolio</span>
       </h1>
 
       <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-inter leading-relaxed mb-10">
-        Engineered with precision for peak battery efficiency, lightweight footprints, and zero bloatware. Download and test our latest Android applications directly.
+        Engineered with precision for peak resource efficiency, lightweight footprints, and zero bloatware. Explore our official Android applications and high-performance Web platforms.
       </p>
 
       <!-- App Switcher Filter Pills -->
       <div class="inline-flex p-1.5 rounded-2xl glass-card border border-white/10 gap-2 mb-12 shadow-card-ambient flex-wrap justify-center">
         <button onclick="filterGallery('all')" id="tab-all" class="tab-btn active px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold transition-all flex items-center gap-2">
           <i data-lucide="layers" class="w-4 h-4"></i>
-          <span>All Applications (2)</span>
+          <span>All Software (6)</span>
         </button>
-        <button onclick="filterGallery('edgedock')" id="tab-edgedock" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
-          <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i>
-          <span>EdgeDock ⚡</span>
+        <button onclick="filterGallery('android')" id="tab-android" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
+          <i data-lucide="smartphone" class="w-4 h-4 text-cyan-400"></i>
+          <span>Android Apps (2)</span>
         </button>
-        <button onclick="filterGallery('elab')" id="tab-elab" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
-          <i data-lucide="cpu" class="w-4 h-4 text-emerald-400"></i>
-          <span>eLab Simulator 🔬</span>
+        <button onclick="filterGallery('web')" id="tab-web" class="tab-btn px-5 py-2.5 rounded-xl text-xs sm:text-sm font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-2">
+          <i data-lucide="globe" class="w-4 h-4 text-blue-400"></i>
+          <span>Web Projects (4)</span>
         </button>
       </div>
 
@@ -283,8 +289,8 @@
       
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        <!-- ================= CARD 1: EDGEDOCK ================= -->
-        <div id="card-edgedock" class="app-card glass-card rounded-3xl p-7 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 shadow-glow-cyan relative flex flex-col justify-between group">
+        <!-- ================= CARD 1: EDGEDOCK (Android) ================= -->
+        <div id="card-edgedock" data-category="android" class="app-card glass-card rounded-3xl p-7 border border-cyan-500/30 hover:border-cyan-400/60 transition-all duration-300 shadow-glow-cyan relative flex flex-col justify-between group">
           <div>
             <!-- Top Badges & Icon -->
             <div class="flex items-start justify-between gap-4 mb-6">
@@ -293,11 +299,11 @@
               </div>
               <div class="flex flex-col items-end gap-1.5">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/30">
-                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-cyan-400"></i>
-                  <span>v1.0.2 Latest</span>
+                  <i data-lucide="smartphone" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  <span>v1.0.3 Android</span>
                 </span>
                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
-                  2.5 MB • Android 8.0+
+                  ~2.58 MB • Android 8.0–15
                 </span>
               </div>
             </div>
@@ -329,9 +335,9 @@
 
           <!-- Card Actions -->
           <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
-            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-v1.0.2.apk" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
+            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-latest.apk" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
               <i data-lucide="download" class="w-4 h-4"></i>
-              <span>Download APK (2.5 MB)</span>
+              <span>Download APK (v1.0.3 • 2.58 MB)</span>
             </a>
             <a href="#edgedock" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
               <span>Details & Specs</span>
@@ -340,8 +346,8 @@
           </div>
         </div>
 
-        <!-- ================= CARD 2: ELAB SIMULATOR ================= -->
-        <div id="card-elab" class="app-card glass-card rounded-3xl p-7 border border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 shadow-glow-emerald relative flex flex-col justify-between group">
+        <!-- ================= CARD 2: ELAB SIMULATOR (Android) ================= -->
+        <div id="card-elab" data-category="android" class="app-card glass-card rounded-3xl p-7 border border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 shadow-glow-emerald relative flex flex-col justify-between group">
           <div>
             <!-- Top Badges & Icon -->
             <div class="flex items-start justify-between gap-4 mb-6">
@@ -350,8 +356,8 @@
               </div>
               <div class="flex flex-col items-end gap-1.5">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
-                  <i data-lucide="sparkles" class="w-3.5 h-3.5 text-emerald-400"></i>
-                  <span>v2.1 Release</span>
+                  <i data-lucide="smartphone" class="w-3.5 h-3.5 text-emerald-400"></i>
+                  <span>v2.1 Android</span>
                 </span>
                 <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
                   5.3 MB • Android 7.0+
@@ -397,6 +403,230 @@
           </div>
         </div>
 
+        <!-- ================= CARD 3: TRENDINGONBASE (Web) ================= -->
+        <div id="card-trendingonbase" data-category="web" class="app-card glass-card rounded-3xl p-7 border border-blue-500/30 hover:border-blue-400/60 transition-all duration-300 shadow-glow-cyan relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-900 border-2 border-blue-400/50 p-2 shadow-glow-cyan flex items-center justify-center text-white">
+                <i data-lucide="trending-up" class="w-10 h-10 text-blue-300"></i>
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 text-blue-400"></i>
+                  <span>Web Application</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  Base L2 • React 18 • Recharts
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-blue-300 transition-colors mb-2">
+              TrendingOnBASE — <span class="text-blue-400">DeFi & DEX Radar</span>
+            </h3>
+            <p class="text-xs font-semibold text-cyan-300 tracking-wide uppercase mb-3">
+              Base L2 Analytics & Smart-Money Radar
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              Real-time Base Layer-2 token tracker, DEX volume rankings (Aerodrome, Uniswap), protocol TVL visualizer ($1.89B+), smart-money whale radar, and instant swap router with automated contract security audits.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="layers" class="w-3.5 h-3.5 text-blue-400"></i> Base L2
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="radar" class="w-3.5 h-3.5 text-cyan-400"></i> Whale Radar
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-400"></i> Honeypot Audit
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://trendingonbase.xyz/" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 shadow-glow-cyan transition-all">
+              <span>Visit Live Site</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+            <a href="https://github.com/abirvai001/TrendingOnBASE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="#trendingonbase" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <span>Details</span>
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= CARD 4: GRAND LINE WALLPAPERS (Web) ================= -->
+        <div id="card-grandlinewalls" data-category="web" class="app-card glass-card rounded-3xl p-7 border border-purple-500/30 hover:border-purple-400/60 transition-all duration-300 shadow-glow-purple relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-700 to-indigo-950 border-2 border-purple-400/50 p-2 shadow-glow-purple flex items-center justify-center text-white">
+                <i data-lucide="image" class="w-10 h-10 text-purple-300"></i>
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 text-purple-400"></i>
+                  <span>Full-Stack Platform</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  Next.js 14 • Prisma • Cloudflare R2
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-purple-300 transition-colors mb-2">
+              Grand Line Wallpapers — <span class="text-purple-400">Media Platform</span>
+            </h3>
+            <p class="text-xs font-semibold text-pink-300 tracking-wide uppercase mb-3">
+              Cloudflare R2 Object CDN & Anime Engine
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              Ultra-high-definition 4K/8K anime media delivery platform powered by Next.js, Cloudflare R2 edge caching, Neon serverless PostgreSQL, Prisma ORM, and high-throughput batch upload pipeline.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="cloud" class="w-3.5 h-3.5 text-purple-400"></i> Cloudflare R2
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="database" class="w-3.5 h-3.5 text-indigo-400"></i> Prisma + Neon
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="zap" class="w-3.5 h-3.5 text-pink-400"></i> WebP Optimizer
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://github.com/abirvai001/onepiece-wallpapers" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 shadow-glow-purple transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Repository & Source</span>
+            </a>
+            <a href="#grandlinewalls" class="inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <span>Architecture</span>
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= CARD 5: MANGAFLOW READER (Web) ================= -->
+        <div id="card-mangaflow" data-category="web" class="app-card glass-card rounded-3xl p-7 border border-emerald-500/30 hover:border-emerald-400/60 transition-all duration-300 shadow-glow-emerald relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-emerald-700 to-teal-950 border-2 border-emerald-400/50 p-2 shadow-glow-emerald flex items-center justify-center text-white">
+                <i data-lucide="book-open" class="w-10 h-10 text-emerald-300"></i>
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 text-emerald-400"></i>
+                  <span>Web Platform</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  HTML5 Canvas • PWA • Workers
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-emerald-300 transition-colors mb-2">
+              MangaFlow Reader — <span class="text-emerald-400">Digital Reader</span>
+            </h3>
+            <p class="text-xs font-semibold text-teal-300 tracking-wide uppercase mb-3">
+              Hardware-Accelerated 2D Canvas Reader
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              Ultra-fast web reader engine engineered with HTML5 Canvas, Web Worker multi-threading pre-fetch, full offline PWA support, seamless vertical webtoon scrolling, and ad network integration.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="cpu" class="w-3.5 h-3.5 text-emerald-400"></i> Hardware Canvas
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="download-cloud" class="w-3.5 h-3.5 text-teal-400"></i> Offline PWA
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="layout" class="w-3.5 h-3.5 text-cyan-400"></i> Double Spread
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://github.com/abirvai001/manga-reader" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 shadow-glow-emerald transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Repository & Source</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= CARD 6: BASED BANGLA WEB3 (Web) ================= -->
+        <div id="card-basedbangla" data-category="web" class="app-card glass-card rounded-3xl p-7 border border-amber-500/30 hover:border-amber-400/60 transition-all duration-300 shadow-glow-emerald relative flex flex-col justify-between group">
+          <div>
+            <!-- Top Badges & Icon -->
+            <div class="flex items-start justify-between gap-4 mb-6">
+              <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-600 to-orange-950 border-2 border-amber-400/50 p-2 shadow-glow-emerald flex items-center justify-center text-white">
+                <i data-lucide="gem" class="w-10 h-10 text-amber-300"></i>
+              </div>
+              <div class="flex flex-col items-end gap-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                  <i data-lucide="globe" class="w-3.5 h-3.5 text-amber-400"></i>
+                  <span>Web3 DApp</span>
+                </span>
+                <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-white/[0.05] text-slate-300 border border-white/10">
+                  Solidity • Wagmi • Base L2
+                </span>
+              </div>
+            </div>
+
+            <!-- Title & Subtitle -->
+            <h3 class="text-2xl font-extrabold text-white group-hover:text-amber-300 transition-colors mb-2">
+              Based Bangla — <span class="text-amber-400">Base L2 DApp</span>
+            </h3>
+            <p class="text-xs font-semibold text-orange-300 tracking-wide uppercase mb-3">
+              On-Chain NFT Marketplace & Ecosystem
+            </p>
+            <p class="text-slate-300 text-xs sm:text-sm font-inter leading-relaxed mb-6">
+              First decentralized community marketplace on Coinbase Base L2, engineered with gas-optimized Solidity ERC-721 smart contracts, multi-wallet onboarding (Coinbase & MetaMask), and on-chain leaderboards.
+            </p>
+
+            <!-- Feature Badges -->
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="code" class="w-3.5 h-3.5 text-amber-400"></i> ERC-721 EVM
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="wallet" class="w-3.5 h-3.5 text-orange-400"></i> Wagmi v2 + Viem
+              </span>
+              <span class="px-2.5 py-1 rounded-lg text-xs font-medium bg-black/40 text-slate-300 border border-white/[0.07] flex items-center gap-1.5">
+                <i data-lucide="flame" class="w-3.5 h-3.5 text-emerald-400"></i> &lt; $0.01 / Mint
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Actions -->
+          <div class="pt-4 border-t border-white/[0.08] flex flex-col sm:flex-row gap-3">
+            <a href="https://github.com/abirvai001/basedbangla-nft" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 shadow-glow-emerald transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Repository & Source</span>
+            </a>
+          </div>
+        </div>
+
       </div>
 
     </section>
@@ -418,14 +648,14 @@
                 <span>Flagship Android Utility</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-extrabold text-white">EdgeDock — Smart Popup Tools</h2>
-              <p class="text-xs sm:text-sm text-slate-400">Version 1.0.2 • Package: <code class="text-cyan-300 font-mono">ss.edgedock</code></p>
+              <p class="text-xs sm:text-sm text-slate-400">Version 1.0.3 • Package: <code class="text-cyan-300 font-mono">ss.edgedock</code></p>
             </div>
           </div>
 
           <div class="flex flex-wrap gap-2.5">
-            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-v1.0.2.apk" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
+            <a href="https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-latest.apk" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-black bg-gradient-to-r from-cyan-400 via-teal-300 to-emerald-400 hover:from-cyan-300 hover:to-emerald-300 shadow-glow-cyan transition-all" download>
               <i data-lucide="download" class="w-4 h-4"></i>
-              <span>Download APK (2.5 MB)</span>
+              <span>Download APK (v1.0.3 • 2.58 MB)</span>
             </a>
             <a href="edgedock.html" class="inline-flex items-center gap-2 px-4 py-3 rounded-xl text-xs font-semibold text-slate-200 glass-card hover:bg-white/[0.08] hover:text-white border border-white/10 transition-all">
               <i data-lucide="external-link" class="w-4 h-4"></i>
@@ -437,6 +667,28 @@
         <!-- Banner Preview -->
         <div class="my-8 rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-black/40">
           <img src="./assets/edgedock_banner.png" alt="EdgeDock Banner" class="w-full h-auto object-cover" onerror="this.src='https://raw.githubusercontent.com/abirvai001/EdgeDock/main/screenshots/banner.png'" />
+        </div>
+
+        <!-- Screenshots Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <div class="w-full h-64 bg-black/60 p-2 flex items-center justify-center overflow-hidden">
+              <img src="./assets/screenshot_studio.png" alt="EdgeDock Theme Studio" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/abirvai001/EdgeDock/main/screenshots/screenshot_studio.png'" />
+            </div>
+            <div class="p-3 text-center text-xs font-semibold text-slate-300 border-t border-white/[0.06]">🎨 Theme & Avatar Studio</div>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <div class="w-full h-64 bg-black/60 p-2 flex items-center justify-center overflow-hidden">
+              <img src="./assets/screenshot_tools.png" alt="EdgeDock Smart Tools Switchboard" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/abirvai001/EdgeDock/main/screenshots/screenshot_tools.png'" />
+            </div>
+            <div class="p-3 text-center text-xs font-semibold text-slate-300 border-t border-white/[0.06]">🎛️ Smart Tools Switchboard</div>
+          </div>
+          <div class="rounded-2xl overflow-hidden border border-white/10 bg-black/40 group">
+            <div class="w-full h-64 bg-black/60 p-2 flex items-center justify-center overflow-hidden">
+              <img src="./assets/screenshot_live_docker.png" alt="EdgeDock Live Floating Edge Overlay" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" onerror="this.src='https://raw.githubusercontent.com/abirvai001/EdgeDock/main/screenshots/screenshot_live_docker.png'" />
+            </div>
+            <div class="p-3 text-center text-xs font-semibold text-slate-300 border-t border-white/[0.06]">⚡ Live Floating Edge Overlay</div>
+          </div>
         </div>
 
         <!-- Feature Columns -->
@@ -500,15 +752,19 @@
               </tr>
               <tr>
                 <td class="px-5 py-3 font-semibold text-white">Version & Code</td>
-                <td class="px-5 py-3 text-slate-300">v1.0.2 (Code 2)</td>
+                <td class="px-5 py-3 text-slate-300">v1.0.3 (Code 3)</td>
               </tr>
               <tr>
                 <td class="px-5 py-3 font-semibold text-white">APK File Size</td>
-                <td class="px-5 py-3 text-emerald-400 font-semibold">2.5 MB (Optimized)</td>
+                <td class="px-5 py-3 text-emerald-400 font-semibold">~2.58 MB (Optimized)</td>
               </tr>
               <tr>
                 <td class="px-5 py-3 font-semibold text-white">Compatibility</td>
-                <td class="px-5 py-3 text-slate-300">Android 8.0 (Oreo) up to Android 15 (API 36)</td>
+                <td class="px-5 py-3 text-slate-300">Android 8.0 (API 26) through Android 15 (API 36)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Monetization</td>
+                <td class="px-5 py-3 text-slate-300">Start.io Publisher Verified (App ID: 207818371)</td>
               </tr>
               <tr>
                 <td class="px-5 py-3 font-semibold text-white">GitHub Repository</td>
@@ -632,6 +888,236 @@
 
     </section>
 
+    <!-- ==================== DETAILED SECTION 3: TRENDINGONBASE (Web) ==================== -->
+    <section id="trendingonbase" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/[0.08]">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-blue-500/30 shadow-glow-cyan mb-12">
+        
+        <!-- Header Ribbon -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-700 to-indigo-950 border-2 border-blue-400/50 p-2 shadow-glow-cyan flex items-center justify-center shrink-0 text-white">
+              <i data-lucide="trending-up" class="w-10 h-10 text-blue-300"></i>
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30 mb-1.5">
+                <i data-lucide="globe" class="w-3.5 h-3.5 text-blue-400"></i>
+                <span>Flagship Web Application • Base L2 DeFi</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">TrendingOnBASE — DeFi & DEX Analytics Radar</h2>
+              <p class="text-xs sm:text-sm text-slate-400">Production Web App • Stack: <code class="text-blue-300 font-mono">React 18 • Vite • Tailwind • Recharts</code></p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://trendingonbase.xyz/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 shadow-glow-cyan transition-all">
+              <span>Visit Live Platform (trendingonbase.xyz)</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+            <a href="https://github.com/abirvai001/TrendingOnBASE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-slate-200 bg-white/[0.06] hover:bg-white/[0.12] border border-white/10 hover:text-white transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>GitHub Repository</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Metrics Spotlight Ribbon -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 my-8">
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/[0.08] text-center">
+            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Base L2 TVL</div>
+            <div class="text-xl font-extrabold text-blue-400 mt-1">$1.89B+</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/[0.08] text-center">
+            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Wallets Tracked</div>
+            <div class="text-xl font-extrabold text-cyan-300 mt-1">28.7M+</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/[0.08] text-center">
+            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">DEX Leaders</div>
+            <div class="text-xl font-extrabold text-emerald-400 mt-1">6 Protocols</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-black/40 border border-white/[0.08] text-center">
+            <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider">L1 Gas Saved</div>
+            <div class="text-xl font-extrabold text-amber-400 mt-1">$42.8M+ / 24h</div>
+          </div>
+        </div>
+
+        <!-- Feature Columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center mb-3">
+              <i data-lucide="activity" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">24h & 7D Velocity Algorithms</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Instant filtering across Watchlist, AI Agents, Meme coins, DeFi protocols, SocialFi, and newly deployed Base pairs.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mb-3">
+              <i data-lucide="bar-chart-3" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">DEX Volume Leaderboards</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Real-time market share visualizations across Aerodrome Finance, Uniswap V3 Base, BaseSwap, and PancakeSwap.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-3">
+              <i data-lucide="shield-alert" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Automated Contract Security</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Simulated honeypot detection, mint authority audits, liquidity lock percentage, and top-holder concentration inspection.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+              <i data-lucide="radar" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Smart-Money Whale Radar</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Tracks high-win-rate Base traders, smart LP providers, and MEV bots with 1-click Basescan explorer integration.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mb-3">
+              <i data-lucide="arrow-left-right" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Instant DEX Swap Router</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Automated swap rate calculations, customizable slippage tolerance, and sub-cent transaction gas estimators ($0.0018).</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-3">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Modern Glassmorphic UI</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Tailored Base Blue (#0052FF) dark aesthetics, smooth micro-interactions, responsive tick streaming, and confetti effects.</p>
+          </div>
+        </div>
+
+        <!-- Technical Specs Table -->
+        <div class="rounded-2xl overflow-hidden border border-white/[0.08] bg-black/20">
+          <table class="w-full text-left text-xs font-inter">
+            <tbody class="divide-y divide-white/[0.06]">
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white w-1/3">Target Network</td>
+                <td class="px-5 py-3 text-blue-300 font-mono">Base Layer-2 (Coinbase EVM)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Frontend Framework</td>
+                <td class="px-5 py-3 text-slate-300">React 18 + Vite 5 + Tailwind CSS</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Data Ingestion</td>
+                <td class="px-5 py-3 text-emerald-400 font-semibold">DefiLlama Protocol API & On-Chain DEX RPC Feeds</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Data Visualization</td>
+                <td class="px-5 py-3 text-slate-300">Recharts Responsive SVG Engine</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">GitHub Repository</td>
+                <td class="px-5 py-3">
+                  <a href="https://github.com/abirvai001/TrendingOnBASE" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline flex items-center gap-1">
+                    <span>abirvai001/TrendingOnBASE</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==================== DETAILED SECTION 4: GRAND LINE WALLPAPERS (Web) ==================== -->
+    <section id="grandlinewalls" class="py-16 relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white/[0.08]">
+      
+      <div class="glass-card rounded-3xl p-8 sm:p-12 border border-purple-500/30 shadow-glow-purple mb-12">
+        
+        <!-- Header Ribbon -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-8 border-b border-white/[0.08]">
+          <div class="flex items-center gap-4">
+            <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-700 to-indigo-950 border-2 border-purple-400/50 p-2 shadow-glow-purple flex items-center justify-center shrink-0 text-white">
+              <i data-lucide="image" class="w-10 h-10 text-purple-300"></i>
+            </div>
+            <div>
+              <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full text-xs font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30 mb-1.5">
+                <i data-lucide="globe" class="w-3.5 h-3.5 text-purple-400"></i>
+                <span>Full-Stack Web Platform • Media Cloud</span>
+              </div>
+              <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Grand Line Wallpapers — Cloud Media Delivery</h2>
+              <p class="text-xs sm:text-sm text-slate-400">Production Platform • Stack: <code class="text-purple-300 font-mono">Next.js 14 • Prisma • Neon PostgreSQL • Cloudflare R2</code></p>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://github.com/abirvai001/onepiece-wallpapers" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 shadow-glow-purple transition-all">
+              <i data-lucide="github" class="w-4 h-4"></i>
+              <span>View Repository & Source</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Feature Columns -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-8">
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-3">
+              <i data-lucide="cloud" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Cloudflare R2 Object Storage</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">High-performance S3-compatible asset storage with zero egress fees and global edge delivery.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-3">
+              <i data-lucide="database" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Serverless Neon PostgreSQL</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Instant branching, autoscaling storage, and rock-solid relational queries modeled with Prisma ORM.</p>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-black/30 border border-white/[0.06]">
+            <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center mb-3">
+              <i data-lucide="layout" class="w-5 h-5"></i>
+            </div>
+            <h4 class="text-sm font-bold text-white mb-1">Next.js 14 App Router</h4>
+            <p class="text-xs text-slate-400 font-inter leading-relaxed">Server Components for instant initial page rendering with client-side infinite scroll and caching.</p>
+          </div>
+        </div>
+
+        <!-- Technical Specs Table -->
+        <div class="rounded-2xl overflow-hidden border border-white/[0.08] bg-black/20">
+          <table class="w-full text-left text-xs font-inter">
+            <tbody class="divide-y divide-white/[0.06]">
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white w-1/3">Framework</td>
+                <td class="px-5 py-3 text-purple-300 font-mono">Next.js 14 (App Router & Server Actions)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Database & ORM</td>
+                <td class="px-5 py-3 text-slate-300">Neon Serverless Postgres + Prisma ORM</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">Asset CDN</td>
+                <td class="px-5 py-3 text-emerald-400 font-semibold">Cloudflare R2 Object Storage (Zero Egress)</td>
+              </tr>
+              <tr>
+                <td class="px-5 py-3 font-semibold text-white">GitHub Repository</td>
+                <td class="px-5 py-3">
+                  <a href="https://github.com/abirvai001/onepiece-wallpapers" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:underline flex items-center gap-1">
+                    <span>abirvai001/onepiece-wallpapers</span>
+                    <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </section>
+
   </main>
 
   <!-- ==================== FOOTER ==================== -->
@@ -645,16 +1131,18 @@
           <img src="./assets/logo.png" alt="StrawHats Studios" class="w-8 h-8 object-contain" />
           <div class="flex flex-col">
             <span class="text-base font-extrabold text-white">StrawHats Studios</span>
-            <span class="text-xs text-slate-400">Sustainable Android Apps & AI Innovations</span>
+            <span class="text-xs text-slate-400">Software Engineering Company • Android Apps & Web Platforms</span>
           </div>
         </div>
 
         <!-- Navigation Links -->
-        <div class="flex items-center gap-6 text-xs text-slate-400 font-medium">
+        <div class="flex flex-wrap items-center gap-5 text-xs text-slate-400 font-medium">
           <a href="index.html" class="hover:text-brand-emerald transition-colors">Main Site</a>
-          <a href="index.html#pillars" class="hover:text-brand-emerald transition-colors">Pillars</a>
+          <a href="#featured-apps" onclick="filterGallery('android')" class="hover:text-cyan-300 transition-colors">Android (2)</a>
+          <a href="#featured-apps" onclick="filterGallery('web')" class="hover:text-blue-300 transition-colors">Web (4)</a>
           <a href="#edgedock" class="hover:text-cyan-300 transition-colors">EdgeDock</a>
           <a href="#elab" class="hover:text-emerald-300 transition-colors">eLab Simulator</a>
+          <a href="#trendingonbase" class="hover:text-blue-300 transition-colors">TrendingOnBASE</a>
           <a href="index.html#contact" class="hover:text-brand-emerald transition-colors">Contact</a>
         </div>
 
@@ -713,28 +1201,27 @@
 
     // Gallery Filter Logic
     function filterGallery(type) {
-      const cardEdgedock = document.getElementById('card-edgedock');
-      const cardElab = document.getElementById('card-elab');
       const tabAll = document.getElementById('tab-all');
-      const tabEdgedock = document.getElementById('tab-edgedock');
-      const tabElab = document.getElementById('tab-elab');
+      const tabAndroid = document.getElementById('tab-android');
+      const tabWeb = document.getElementById('tab-web');
 
       // Update button classes
-      [tabAll, tabEdgedock, tabElab].forEach(btn => btn?.classList.remove('active'));
+      [tabAll, tabAndroid, tabWeb].forEach(btn => btn?.classList.remove('active'));
 
-      if (type === 'all') {
-        tabAll?.classList.add('active');
-        if (cardEdgedock) cardEdgedock.style.display = 'flex';
-        if (cardElab) cardElab.style.display = 'flex';
-      } else if (type === 'edgedock') {
-        tabEdgedock?.classList.add('active');
-        if (cardEdgedock) cardEdgedock.style.display = 'flex';
-        if (cardElab) cardElab.style.display = 'none';
-      } else if (type === 'elab') {
-        tabElab?.classList.add('active');
-        if (cardEdgedock) cardEdgedock.style.display = 'none';
-        if (cardElab) cardElab.style.display = 'flex';
-      }
+      const activeBtn = document.getElementById(`tab-${type}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      const cards = document.querySelectorAll('.app-card');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (type === 'all' || cat === type || card.id === `card-${type}`) {
+          card.style.display = 'flex';
+          card.classList.remove('hidden');
+        } else {
+          card.style.display = 'none';
+          card.classList.add('hidden');
+        }
+      });
     }
   </script>
 </body>

@@ -4,3 +4,9 @@ Thumbs.db
 *.log
 
 .vercel
+assets/font_tests/
+assets/*_compare*.png
+assets/*_test*.png
+assets/font_comparison*.png
+assets/exo2_*.png
+assets/Dosis.ttf

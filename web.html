@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  
+  <title>Web Platforms | StrawHats Studios</title>
+  <meta name="title" content="Web Platforms | StrawHats Studios" />
+  <meta name="description" content="Explore official web platforms and websites built by StrawHats Studios: TrendingOnBASE, Grand Line Wallpapers, MangaFlow Reader, and Based Bangla." />
+  <meta name="theme-color" content="#070913" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  <link rel="apple-touch-icon" href="./assets/logo.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Three.js for Aesthetic 3D Background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Aesthetic Vibe Theme -->
+  <link rel="stylesheet" href="./styles/3d-theme.css" />
+</head>
+
+<body class="min-h-screen relative antialiased selection:bg-purple-500 selection:text-white">
+
+  <!-- Aesthetic 3D WebGL Canvas -->
+  <canvas id="webgl-canvas"></canvas>
+
+  <!-- Aesthetic Vibe Floating Aurora Background -->
+  <div class="ambient-aurora">
+    <div class="aurora-orb-1"></div>
+    <div class="aurora-orb-2"></div>
+    <div class="aurora-orb-3"></div>
+  </div>
+
+  <!-- ==================== FLOATING DYNAMIC DOCK NAVBAR ==================== -->
+  <header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto floating-dock-nav rounded-full px-5 py-2.5 flex items-center justify-between">
+      
+      <!-- Perfectly Rounded Logo & Brand -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <img src="./assets/logo.png" alt="StrawHats Studios Logo" class="w-9 h-9 rounded-full object-cover shadow-md group-hover:scale-105 transition-transform" />
+        <span class="text-sm font-extrabold tracking-tight text-white group-hover:text-cyan-400 transition-colors hidden sm:inline">
+          StrawHats Studios
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-1.5">
+        <a href="index.html" class="px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-full hover:bg-white/[0.06] transition-all">
+          Studio Hub
+        </a>
+        <a href="android.html" class="px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white rounded-full hover:bg-white/[0.06] transition-all">
+          Android Suite
+        </a>
+        <a href="web.html" class="px-4 py-2 text-xs font-bold text-white bg-white/10 rounded-full transition-all">
+          Web Platforms
+        </a>
+      </nav>
+
+      <!-- Action -->
+      <div class="flex items-center gap-2">
+        <a href="https://www.facebook.com/strawhats.studios" target="_blank" rel="noopener noreferrer" class="btn-action px-4 py-2 rounded-full text-xs font-bold hidden sm:inline-flex items-center gap-1.5" title="Connect on Facebook">
+          <i data-lucide="facebook" class="w-3.5 h-3.5"></i>
+          <span>Facebook Page</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-toggle-btn" class="md:hidden p-2 rounded-full text-slate-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Toggle Navigation">
+          <i data-lucide="menu" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden max-w-sm mx-auto mt-3 floating-dock-nav rounded-3xl p-4 space-y-2">
+      <a href="index.html" class="block px-4 py-2.5 rounded-2xl text-sm font-semibold text-slate-300 hover:bg-white/5 hover:text-white">Studio Hub</a>
+      <a href="android.html" class="block px-4 py-2.5 rounded-2xl text-sm font-semibold text-slate-300 hover:bg-white/5 hover:text-white">Android Suite</a>
+      <a href="web.html" class="block px-4 py-2.5 rounded-2xl text-sm font-bold bg-white/10 text-white">Web Platforms</a>
+      <a href="https://www.facebook.com/strawhats.studios" target="_blank" rel="noopener noreferrer" class="block px-4 py-2.5 rounded-2xl text-sm font-semibold text-cyan-300 hover:bg-white/5">For Business: Facebook</a>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="pt-28 sm:pt-36 pb-20">
+
+    <!-- HERO SECTION -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 text-center mb-12 sm:mb-16">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-500/10 text-xs font-bold text-purple-300 mb-4">
+        <span>Web Engineering Platforms</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-4">
+        Web <span class="text-glow-purple">Platforms</span> &amp; Applications
+      </h1>
+
+      <p class="text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+        Modern websites, full-stack web platforms, and custom digital portals engineered by StrawHats Studios.
+      </p>
+    </section>
+
+    <!-- ==================== BORDERLESS CLEAN TILES GRID ==================== -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- ================= TILE 1: TRENDINGONBASE ================= -->
+        <div class="borderless-card rounded-3xl p-6 flex flex-col justify-between group">
+          <div>
+            <!-- Dedicated Site Homepage Image -->
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-5 bg-slate-900 shadow-lg">
+              <img src="./assets/preview_trendingonbase.svg" alt="TrendingOnBASE Homepage" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
+            </div>
+            
+            <!-- Sitename -->
+            <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+              TrendingOnBASE
+            </h3>
+          </div>
+
+          <!-- Click Button To Visit Site -->
+          <div class="pt-5 mt-2 flex items-center justify-between">
+            <a href="https://trendingonbase.xyz/" target="_blank" rel="noopener noreferrer" class="btn-action w-full py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+              <span>Visit Site</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= TILE 2: GRAND LINE WALLPAPERS ================= -->
+        <div class="borderless-card rounded-3xl p-6 flex flex-col justify-between group">
+          <div>
+            <!-- Dedicated Site Homepage Image -->
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-5 bg-slate-900 shadow-lg">
+              <img src="./assets/preview_grandline.svg" alt="Grand Line Wallpapers Homepage" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
+            </div>
+            
+            <!-- Sitename -->
+            <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">
+              Grand Line Wallpapers
+            </h3>
+          </div>
+
+          <!-- Click Button To Visit Site -->
+          <div class="pt-5 mt-2 flex items-center justify-between">
+            <a href="https://github.com/abirvai001/onepiece-wallpapers" target="_blank" rel="noopener noreferrer" class="btn-action w-full py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+              <span>Visit Site</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= TILE 3: MANGAFLOW READER ================= -->
+        <div class="borderless-card rounded-3xl p-6 flex flex-col justify-between group">
+          <div>
+            <!-- Dedicated Site Homepage Image -->
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-5 bg-slate-900 shadow-lg">
+              <img src="./assets/preview_mangaflow.svg" alt="MangaFlow Reader Homepage" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
+            </div>
+            
+            <!-- Sitename -->
+            <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors">
+              MangaFlow Reader
+            </h3>
+          </div>
+
+          <!-- Click Button To Visit Site -->
+          <div class="pt-5 mt-2 flex items-center justify-between">
+            <a href="https://github.com/abirvai001/manga-reader" target="_blank" rel="noopener noreferrer" class="btn-action w-full py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+              <span>Visit Site</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= TILE 4: BASED BANGLA WEB3 ================= -->
+        <div class="borderless-card rounded-3xl p-6 flex flex-col justify-between group">
+          <div>
+            <!-- Dedicated Site Homepage Image -->
+            <div class="aspect-[16/10] rounded-2xl overflow-hidden mb-5 bg-slate-900 shadow-lg">
+              <img src="./assets/preview_basedbangla.svg" alt="Based Bangla Web3 Homepage" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300" />
+            </div>
+            
+            <!-- Sitename -->
+            <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors">
+              Based Bangla Web3
+            </h3>
+          </div>
+
+          <!-- Click Button To Visit Site -->
+          <div class="pt-5 mt-2 flex items-center justify-between">
+            <a href="https://github.com/abirvai001/basedbangla-nft" target="_blank" rel="noopener noreferrer" class="btn-action w-full py-3 rounded-2xl text-xs font-bold flex items-center justify-center gap-2 shadow-md">
+              <span>Visit Site</span>
+              <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t border-white/[0.04] bg-[#04060b] py-8 text-center text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2 text-slate-400">
+        <img src="./assets/logo.png" alt="Logo" class="w-5 h-5 rounded-full object-cover" />
+        <span class="font-bold text-white">StrawHats Studios</span>
+        <span>•</span>
+        <span>Web Engineering Platforms</span>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-5 font-semibold text-slate-400">
+        <a href="https://www.facebook.com/strawhats.studios" target="_blank" rel="noopener noreferrer" class="text-cyan-300 hover:text-white transition-colors flex items-center gap-1.5">
+          <i data-lucide="facebook" class="w-3.5 h-3.5"></i>
+          <span>For Business: facebook.com/strawhats.studios</span>
+        </a>
+        <a href="index.html" class="hover:text-white transition-colors">Studio Hub</a>
+        <a href="android.html" class="hover:text-cyan-300 transition-colors">Android Suite</a>
+        <a href="edgedock.html" class="hover:text-white transition-colors">EdgeDock</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./scripts/bg-3d.js"></script>
+  <script>
+    lucide.createIcons();
+    const mobileBtn = document.getElementById('mobile-toggle-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

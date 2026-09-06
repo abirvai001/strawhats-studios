@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Anek+Bangla:wght@300;400;500;600;700;800&family=Mina:wght@400;700&display=swap');
+
+:root {
+  --bg-deep: #070913;
+  --bg-surface: #0c1020;
+  --bg-card: rgba(18, 24, 42, 0.6);
+  --bg-card-hover: rgba(26, 35, 60, 0.75);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --cyan-glow: #00e5ff;
+  --purple-glow: #8b5cf6;
+  --font-logo: 'Exo 2', sans-serif;
+  --font-bangla: 'Anek Bangla', 'Mina', sans-serif;
+}
+
+/* Base Body Styling - Using Exo 2 (The Exact Site Logo Font) */
+*,
+body, button, input, select, textarea, a, p, span, h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-logo) !important;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: var(--text-main);
+  overflow-x: hidden;
+  font-weight: 500;
+  letter-spacing: 0.015em;
+  line-height: 1.6;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* When in Bengali language, use the best Bengali font (Hind Siliguri & Anek Bangla) */
+html[lang="bn"],
+html[lang="bn"] *,
+body.lang-bn,
+body.lang-bn *,
+body.lang-bn button,
+body.lang-bn a,
+body.lang-bn p,
+body.lang-bn span,
+body.lang-bn h1,
+body.lang-bn h2,
+body.lang-bn h3,
+body.lang-bn h4,
+body.lang-bn h5,
+body.lang-bn h6 {
+  font-family: var(--font-bangla) !important;
+}
+
+body.lang-bn {
+  letter-spacing: 0 !important;
+  line-height: 1.68 !important;
+}
+
+/* ==========================================================================
+   UNIFIED COLOR FILTER FOR ALL ICONS (EXCLUDING LOGO)
+   ========================================================================== */
+i[data-lucide],
+svg.lucide,
+[data-lucide] {
+  color: #00e5ff !important;
+  stroke: #00e5ff !important;
+  filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.45)) !important;
+  -webkit-filter: drop-shadow(0 0 5px rgba(0, 229, 255, 0.45)) !important;
+  transition: filter 0.25s ease, stroke 0.25s ease, color 0.25s ease;
+}
+
+/* Ensure the StrawHats Studios logo & brand logos (Facebook, Gmail) are completely excluded from any filters */
+.site-logo,
+.brand-logo,
+svg.brand-logo,
+img[src*="logo.png"],
+img[src*="logo"] {
+  filter: none !important;
+  -webkit-filter: none !important;
+  stroke: none !important;
+}
+
+/* Aesthetic 3D WebGL Canvas (3D Straw Hat & Celestial Orbitals) */
+#webgl-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -8;
+  opacity: 0.88;
+}
+
+/* Aesthetic Ambient Floating Aurora Blooms (Zero Noise) */
+.ambient-aurora {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -10;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 0%, #0c1326 0%, #070913 70%);
+}
+
+.aurora-orb-1 {
+  position: absolute;
+  top: -15%;
+  left: 20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.12) 0%, rgba(0, 229, 255, 0) 70%);
+  filter: blur(120px);
+  animation: floatOrb1 18s ease-in-out infinite alternate;
+}
+
+.aurora-orb-2 {
+  position: absolute;
+  top: 40%;
+  right: -5%;
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.12) 0%, rgba(139, 92, 246, 0) 70%);
+  filter: blur(140px);
+  animation: floatOrb2 22s ease-in-out infinite alternate;
+}
+
+.aurora-orb-3 {
+  position: absolute;
+  bottom: -10%;
+  left: 10%;
+  width: 550px;
+  height: 550px;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0) 70%);
+  filter: blur(130px);
+  animation: floatOrb1 20s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes floatOrb1 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(50px, 40px) scale(1.1); }
+}
+
+@keyframes floatOrb2 {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(-40px, -50px) scale(1.15); }
+}
+
+/* Floating Dynamic Island Navigation Bar (Borderless) */
+.floating-dock-nav {
+  background: rgba(10, 14, 26, 0.72);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: none !important;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.7), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Borderless Glass Panels */
+.borderless-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: none !important;
+  box-shadow: 0 14px 35px -8px rgba(0, 0, 0, 0.5), 0 0 1px 1px rgba(255, 255, 255, 0.04);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease;
+}
+
+.borderless-card:hover {
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px -12px rgba(0, 0, 0, 0.75), 0 0 30px -10px rgba(0, 229, 255, 0.2);
+}
+
+/* Clean Typography Gradients */
+.text-glow-cyan {
+  background: linear-gradient(135deg, #00e5ff 0%, #38bdf8 60%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-glow-purple {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 50%, #ec4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Clean Action Buttons (Borderless) */
+.btn-action {
+  background: linear-gradient(135deg, #00e5ff 0%, #3b82f6 100%);
+  color: #050811;
+  font-weight: 700;
+  border: none !important;
+  transition: all 0.25s ease;
+}
+
+.btn-action:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px -6px rgba(0, 229, 255, 0.4);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f1f5f9;
+  font-weight: 600;
+  border: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #070913;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}

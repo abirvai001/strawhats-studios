@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1006"/>
+      <stop offset="100%" stop-color="#0a0502"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="800" height="480" rx="16" fill="url(#bg)"/>
+  
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#261608"/>
+  <circle cx="28" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="44" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="21" r="5" fill="#27c93f"/>
+  <rect x="90" y="11" width="340" height="20" rx="6" fill="#38210d"/>
+  <text x="104" y="25" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="11">https://basedbangla.network</text>
+
+  <!-- App Header -->
+  <g transform="translate(28, 62)">
+    <circle cx="16" cy="16" r="16" fill="url(#amberGrad)"/>
+    <text x="16" y="21" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" text-anchor="middle">💎</text>
+    <text x="42" y="17" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">Based Bangla Web3</text>
+    <text x="42" y="30" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Base L2 On-Chain NFT Marketplace &amp; Community</text>
+
+    <!-- Connect Wallet Button -->
+    <rect x="560" y="4" width="170" height="32" rx="10" fill="url(#amberGrad)"/>
+    <text x="645" y="24" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Connect Wallet 🦊</text>
+  </g>
+
+  <!-- Main Showcase Grid -->
+  <g transform="translate(28, 115)">
+    <!-- Featured NFT Minting Card -->
+    <g transform="translate(0, 0)">
+      <rect width="360" height="340" rx="14" fill="#24150a"/>
+      <rect x="16" y="16" width="328" height="210" rx="10" fill="#38210e"/>
+      <text x="180" y="125" fill="#fde68a" font-family="-apple-system, sans-serif" font-size="14" font-weight="800" text-anchor="middle">Cyber Royal Bengal #001</text>
+      
+      <text x="24" y="256" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="800">Genesis Edition • 1,000 Supply</text>
+      <text x="24" y="278" fill="#fbbf24" font-family="-apple-system, sans-serif" font-size="12">Price: 0.001 ETH (&lt; $0.01 Base Gas)</text>
+
+      <rect x="24" y="294" width="312" height="36" rx="8" fill="url(#amberGrad)"/>
+      <text x="180" y="316" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Mint On-Chain (Base L2 ERC-721)</text>
+    </g>
+
+    <!-- Leaderboard & Protocol Stats -->
+    <g transform="translate(384, 0)">
+      <rect width="360" height="160" rx="14" fill="#24150a"/>
+      <text x="20" y="28" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Community On-Chain Metrics</text>
+      <rect x="16" y="44" width="156" height="46" rx="8" fill="#331e0f"/>
+      <text x="26" y="62" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Total Mints</text>
+      <text x="26" y="82" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="14" font-weight="800">842 / 1,000</text>
+
+      <rect x="188" y="44" width="156" height="46" rx="8" fill="#331e0f"/>
+      <text x="198" y="62" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Unique Holders</text>
+      <text x="198" y="82" fill="#10B981" font-family="-apple-system, sans-serif" font-size="14" font-weight="800">419 Wallets</text>
+
+      <rect x="16" y="100" width="328" height="46" rx="8" fill="#331e0f"/>
+      <text x="26" y="118" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">Smart Contract</text>
+      <text x="26" y="136" fill="#fde68a" font-family="monospace" font-size="11">0x8a92f...7B3c (Base Verified)</text>
+    </g>
+
+    <!-- Top Collectors -->
+    <g transform="translate(384, 180)">
+      <rect width="360" height="160" rx="14" fill="#24150a"/>
+      <text x="20" y="28" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Top Community Collectors</text>
+      
+      <rect x="16" y="44" width="328" height="32" rx="6" fill="#331e0f"/>
+      <text x="28" y="64" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">1. 0x4f...91a2</text>
+      <text x="330" y="64" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">48 NFTs</text>
+
+      <rect x="16" y="84" width="328" height="32" rx="6" fill="#2a180b"/>
+      <text x="28" y="104" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">2. 0xbc...348d</text>
+      <text x="330" y="104" fill="#f59e0b" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">32 NFTs</text>
+    </g>
+  </g>
+</svg>

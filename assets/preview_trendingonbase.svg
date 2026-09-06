@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="baseBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0052FF"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0052FF" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0052FF" stop-opacity="0.0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="800" height="480" rx="16" fill="url(#bg)"/>
+  
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#0d1424"/>
+  <circle cx="28" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="44" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="21" r="5" fill="#27c93f"/>
+  <rect x="90" y="11" width="340" height="20" rx="6" fill="#151e36"/>
+  <text x="104" y="25" fill="#64748b" font-family="-apple-system, sans-serif" font-size="11">https://trendingonbase.com</text>
+
+  <!-- App Header -->
+  <g transform="translate(28, 62)">
+    <circle cx="16" cy="16" r="16" fill="url(#baseBlue)"/>
+    <text x="16" y="21" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" text-anchor="middle">⚡</text>
+    <text x="42" y="17" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">TrendingOnBASE</text>
+    <text x="42" y="30" fill="#00D4FF" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Base L2 DeFi &amp; TVL Radar</text>
+
+    <!-- Top KPI Badges -->
+    <rect x="420" y="4" width="140" height="28" rx="8" fill="#111a30"/>
+    <text x="430" y="22" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">TVL: <tspan fill="#00D4FF" font-weight="700">$1.89B+</tspan></text>
+    <rect x="570" y="4" width="160" height="28" rx="8" fill="#111a30"/>
+    <text x="580" y="22" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10">24h Vol: <tspan fill="#10B981" font-weight="700">$284.5M</tspan></text>
+  </g>
+
+  <!-- TVL Trajectory Chart Card -->
+  <g transform="translate(28, 120)">
+    <rect width="460" height="190" rx="14" fill="#0e172a"/>
+    <text x="20" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Base L2 TVL Trajectory (DefiLlama)</text>
+    <text x="440" y="26" fill="#10b981" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="end">+18.4% 7D</text>
+    
+    <!-- Chart Grid Lines -->
+    <line x1="20" y1="60" x2="440" y2="60" stroke="#1e293b" stroke-width="1"/>
+    <line x1="20" y1="100" x2="440" y2="100" stroke="#1e293b" stroke-width="1"/>
+    <line x1="20" y1="140" x2="440" y2="140" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Area Fill -->
+    <path d="M 20 150 Q 80 130 140 135 T 260 90 T 360 70 T 440 45 L 440 170 L 20 170 Z" fill="url(#chartGrad)"/>
+    <!-- Line Stroke -->
+    <path d="M 20 150 Q 80 130 140 135 T 260 90 T 360 70 T 440 45" fill="none" stroke="#00D4FF" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="440" cy="45" r="4" fill="#ffffff"/>
+  </g>
+
+  <!-- Instant DEX Swap Widget Card -->
+  <g transform="translate(508, 120)">
+    <rect width="264" height="190" rx="14" fill="#0e172a"/>
+    <text x="20" y="26" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Base DEX Swap Router</text>
+    <rect x="16" y="44" width="232" height="38" rx="8" fill="#162238"/>
+    <text x="28" y="68" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Pay: 1.50 ETH</text>
+    <text x="236" y="68" fill="#00D4FF" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">ETH</text>
+
+    <rect x="16" y="90" width="232" height="38" rx="8" fill="#162238"/>
+    <text x="28" y="114" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Receive: 4,820 USDC</text>
+    <text x="236" y="114" fill="#10B981" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" text-anchor="end">USDC</text>
+
+    <rect x="16" y="138" width="232" height="36" rx="8" fill="url(#baseBlue)"/>
+    <text x="132" y="161" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Swap via Aerodrome ($0.0018 Gas)</text>
+  </g>
+
+  <!-- Trending Tokens Table Preview -->
+  <g transform="translate(28, 326)">
+    <rect width="744" height="130" rx="14" fill="#0e172a"/>
+    <text x="20" y="25" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="13" font-weight="700">Trending Tokens on Base (24h Velocity)</text>
+    
+    <!-- Token Row 1 -->
+    <rect x="16" y="38" width="712" height="38" rx="8" fill="#141f36"/>
+    <text x="32" y="62" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">1. $VIRTUAL</text>
+    <text x="180" y="62" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Virtual Protocol</text>
+    <text x="340" y="62" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11">$2.48</text>
+    <text x="480" y="62" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">+24.8%</text>
+    <text x="680" y="62" fill="#00D4FF" font-family="-apple-system, sans-serif" font-size="10" text-anchor="end">Audit: 98/100 ✓</text>
+
+    <!-- Token Row 2 -->
+    <rect x="16" y="82" width="712" height="38" rx="8" fill="#111b2f"/>
+    <text x="32" y="106" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">2. $AERO</text>
+    <text x="180" y="106" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Aerodrome Finance</text>
+    <text x="340" y="106" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="11">$1.32</text>
+    <text x="480" y="106" fill="#10b981" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">+12.1%</text>
+    <text x="680" y="106" fill="#00D4FF" font-family="-apple-system, sans-serif" font-size="10" text-anchor="end">Audit: 99/100 ✓</text>
+  </g>
+</svg>

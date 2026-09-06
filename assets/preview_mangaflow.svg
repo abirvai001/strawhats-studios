@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061712"/>
+      <stop offset="100%" stop-color="#020806"/>
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="800" height="480" rx="16" fill="url(#bg)"/>
+  
+  <!-- Browser Chrome Top Bar -->
+  <rect width="800" height="42" rx="16" fill="#0c1f19"/>
+  <circle cx="28" cy="21" r="5" fill="#ff5f56"/>
+  <circle cx="44" cy="21" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="21" r="5" fill="#27c93f"/>
+  <rect x="90" y="11" width="340" height="20" rx="6" fill="#142e26"/>
+  <text x="104" y="25" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11">https://mangaflow.reader.app</text>
+
+  <!-- App Header -->
+  <g transform="translate(28, 62)">
+    <circle cx="16" cy="16" r="16" fill="url(#tealGrad)"/>
+    <text x="16" y="21" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="14" font-weight="900" text-anchor="middle">📖</text>
+    <text x="42" y="17" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="16" font-weight="800">MangaFlow Reader</text>
+    <text x="42" y="30" fill="#34d399" font-family="-apple-system, sans-serif" font-size="10" font-weight="600">Hardware-Accelerated HTML5 Canvas Engine • Offline PWA</text>
+
+    <!-- Chapter Selector / Controls -->
+    <rect x="520" y="4" width="210" height="30" rx="10" fill="#142e26"/>
+    <text x="536" y="23" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="11">Chapter 1124: The New Era ▾</text>
+  </g>
+
+  <!-- Reading Viewport (Canvas Simulation) -->
+  <g transform="translate(28, 115)">
+    <!-- Sidebar Navigation -->
+    <rect width="180" height="340" rx="14" fill="#0a1a15"/>
+    <text x="16" y="28" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="700">Table of Contents</text>
+    <rect x="12" y="42" width="156" height="32" rx="6" fill="#16382e"/>
+    <text x="24" y="62" fill="#34d399" font-family="-apple-system, sans-serif" font-size="11" font-weight="700">Ch. 1124: The New Era</text>
+    
+    <rect x="12" y="82" width="156" height="32" rx="6" fill="#0f2620"/>
+    <text x="24" y="102" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Ch. 1123: Two Weeks Void</text>
+
+    <rect x="12" y="122" width="156" height="32" rx="6" fill="#0f2620"/>
+    <text x="24" y="142" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Ch. 1122: Emeth's Roar</text>
+
+    <!-- Reading Progress Gauge -->
+    <rect x="12" y="290" width="156" height="36" rx="8" fill="#142e26"/>
+    <text x="20" y="308" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="10">Preloaded Pages (Workers)</text>
+    <rect x="20" y="314" width="140" height="4" rx="2" fill="#0a1a15"/>
+    <rect x="20" y="314" width="112" height="4" rx="2" fill="#10B981"/>
+
+    <!-- High-Performance Canvas Page Spread -->
+    <g transform="translate(200, 0)">
+      <rect width="544" height="340" rx="14" fill="#0e241d"/>
+      
+      <!-- Simulated Manga Page Artwork Spread -->
+      <rect x="16" y="16" width="248" height="308" rx="8" fill="#16382e"/>
+      <rect x="28" y="28" width="224" height="120" rx="4" fill="#1c473a"/>
+      <text x="140" y="94" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Page 14 • High DPI Canvas</text>
+      <rect x="28" y="156" width="108" height="156" rx="4" fill="#1a4034"/>
+      <rect x="144" y="156" width="108" height="156" rx="4" fill="#1a4034"/>
+
+      <!-- Right Page Spread -->
+      <rect x="280" y="16" width="248" height="308" rx="8" fill="#16382e"/>
+      <rect x="292" y="28" width="224" height="284" rx="4" fill="#1c473a"/>
+      <text x="404" y="174" fill="#a7f3d0" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" text-anchor="middle">Page 15 • Double Spread</text>
+    </g>
+  </g>
+</svg>

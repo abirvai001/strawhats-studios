@@ -3,12 +3,29 @@
  * Studio App Showcase, Filtering, App Details View, and Theme Toggle.
  */
 
-// Official StrawHats Studios Apps (eLab Simulator)
+// Official StrawHats Studios Software Projects (Android & Web)
 const STUDIO_APPS = [
+  {
+    id: "app-edgedock",
+    title: "EdgeDock — Smart Popup Tools",
+    category: "Android • System Utility",
+    tagline: "Next-gen floating sidebar, edge dock, live RAM booster & assistive touch for Android.",
+    description: "EdgeDock is an ultra-fast, lightweight floating edge dock and assistive touch overlay for Android developed by StrawHats Studios. It gives you instant access to your favorite tools, hardware shortcuts, memory booster, volume hub, and floating popups anywhere on your screen.",
+    platforms: ["Android"],
+    status: "live",
+    version: "v1.0.3",
+    techTags: "Android 8.0–15, Floating Sidebar, RAM Booster, Volume Hub, R8 Anti-Tamper, Start.io Monetized",
+    iconUrl: "./assets/edgedock_icon.png",
+    iconColor: "linear-gradient(135deg, #00e5ff, #8b5cf6)",
+    iconSymbol: "fa-bolt",
+    linkIos: "",
+    linkAndroid: "https://raw.githubusercontent.com/abirvai001/EdgeDock/main/EdgeDock-latest.apk",
+    linkDemo: "edgedock.html"
+  },
   {
     id: "app-elab",
     title: "eLab — Virtual EEE Simulator",
-    category: "AI & Tools",
+    category: "Android • Scientific Simulation",
     tagline: "Interactive MB-102 Breadboard, Circuit Simulation & Instrument Suite for Android.",
     description: "eLab is a premier virtual electrical & electronics engineering laboratory engineered by StrawHats Studios. Features an authentic MB-102 solderless breadboard, real-time MNA circuit solver, dual-channel digital oscilloscope, and precision digital multimeter.",
     platforms: ["Android"],
@@ -21,6 +38,74 @@ const STUDIO_APPS = [
     linkIos: "",
     linkAndroid: "https://github.com/abirvai001/eLab-Virtual-eee-lab-simulator/releases/download/v2.1/eLab-v2.1-release.apk",
     linkDemo: "elab.html"
+  },
+  {
+    id: "app-trendingonbase",
+    title: "TrendingOnBASE — DeFi & DEX Radar",
+    category: "Web • DeFi & Analytics",
+    tagline: "Real-Time Base L2 Token Analytics, DEX Volume Radar, TVL Tracker, and Instant Swap Router.",
+    description: "TrendingOnBASE is a modern, high-performance web application designed for tracking real-time trending tokens, DEX volumes, protocol TVL trajectories ($1.89B+), cumulative wallet growth, smart money whale traders, and instant token swaps on Coinbase Base L2.",
+    platforms: ["Web"],
+    status: "live",
+    version: "v2.0 Web",
+    techTags: "Base L2, React 18, Vite, Tailwind CSS, DefiLlama API, Recharts, DEX Router, Honeypot Audit",
+    iconUrl: "",
+    iconColor: "linear-gradient(135deg, #0052FF, #4F46E5)",
+    iconSymbol: "fa-chart-line",
+    linkIos: "",
+    linkAndroid: "",
+    linkDemo: "https://trendingonbase.xyz/",
+  },
+  {
+    id: "app-grandlinewalls",
+    title: "Grand Line Wallpapers",
+    category: "Web • Media Platform",
+    tagline: "High-resolution anime wallpaper delivery platform with Cloudflare R2 & Neon PostgreSQL.",
+    description: "Grand Line Wallpapers is a full-stack web application delivering 4K/8K anime media assets powered by Next.js 14 App Router, Cloudflare R2 object CDN caching, Neon serverless PostgreSQL, and Prisma ORM.",
+    platforms: ["Web"],
+    status: "live",
+    version: "v1.4 Web",
+    techTags: "Next.js 14, Cloudflare R2, Neon Postgres, Prisma ORM, WebP Optimizer, Studio Admin",
+    iconUrl: "",
+    iconColor: "linear-gradient(135deg, #8B5CF6, #EC4899)",
+    iconSymbol: "fa-image",
+    linkIos: "",
+    linkAndroid: "",
+    linkDemo: "https://github.com/abirvai001/onepiece-wallpapers"
+  },
+  {
+    id: "app-mangaflow",
+    title: "MangaFlow Reader",
+    category: "Web • Digital Reader",
+    tagline: "Hardware-accelerated HTML5 Canvas reading engine with Web Worker multi-threading.",
+    description: "MangaFlow Reader delivers zero-lag digital reading using hardware-accelerated 2D Canvas rendering, background pre-fetching Web Workers, offline PWA caching, and responsive vertical/double-spread view modes.",
+    platforms: ["Web"],
+    status: "live",
+    version: "v2.2 Web",
+    techTags: "HTML5 Canvas, Web Workers, PWA Service Worker, Webtoon Scroll, Ad Integration",
+    iconUrl: "",
+    iconColor: "linear-gradient(135deg, #10B981, #06B6D4)",
+    iconSymbol: "fa-book-open",
+    linkIos: "",
+    linkAndroid: "",
+    linkDemo: "https://github.com/abirvai001/manga-reader"
+  },
+  {
+    id: "app-basedbangla",
+    title: "Based Bangla Web3",
+    category: "Web • Web3 DApp",
+    tagline: "Base Network NFT Marketplace & Community Portal on Coinbase L2.",
+    description: "Based Bangla is a decentralized community marketplace built on Coinbase Base Layer-2, featuring gas-optimized Solidity ERC-721 smart contracts, Wagmi v2/Viem wallet integration, and community leaderboards.",
+    platforms: ["Web"],
+    status: "live",
+    version: "v1.1 DApp",
+    techTags: "Solidity EVM, Wagmi v2, Viem, Coinbase Wallet, MetaMask, Base L2, Sub-cent Minting",
+    iconUrl: "",
+    iconColor: "linear-gradient(135deg, #F59E0B, #EA580C)",
+    iconSymbol: "fa-gem",
+    linkIos: "",
+    linkAndroid: "",
+    linkDemo: "https://github.com/abirvai001/basedbangla-nft"
   }
 ];
 
@@ -81,6 +166,7 @@ function renderAppGallery() {
     if (activeFilter === 'all') return true;
     if (activeFilter === 'ios') return app.platforms && app.platforms.includes('iOS');
     if (activeFilter === 'android') return app.platforms && app.platforms.includes('Android');
+    if (activeFilter === 'web') return app.platforms && app.platforms.includes('Web');
     if (activeFilter === 'live') return app.status === 'live';
     if (activeFilter === 'dev') return app.status === 'dev' || app.status === 'beta';
     return true;
