@@ -24,7 +24,7 @@ const translations = {
     // Hero
     hero_badge: "StrawHats Studios • Software & Web Development",
     hero_title: 'Building for the <span class="text-glow-cyan">next era</span> <br class="hidden sm:inline" /> on your <span class="text-glow-purple">demands</span>.',
-    hero_desc: "We craft modern websites, high-performance Android applications, and custom software systems for schools, businesses, real estate, restaurants, and public properties.",
+    hero_desc: "We craft modern websites and high-performance Android applications.",
     
     // What We Build
     build_badge: "What We Build For You",
@@ -141,7 +141,7 @@ const translations = {
     // Hero
     hero_badge: "স্ট্রহ্যাটস স্টুডিওস • সফটওয়্যার ও ওয়েব ডেভেলপমেন্ট",
     hero_title: 'আপনার চাহিদামতো <span class="text-glow-cyan">নতুন প্রজন্মের প্রযুক্তি</span> <br class="hidden sm:inline" /> নির্মাণে <span class="text-glow-purple">আমরা প্রতিশ্রুতিবদ্ধ</span>।',
-    hero_desc: "আমরা স্কুল, ব্যবসা, রিয়েল এস্টেট, রেস্তোরাঁ এবং সাধারণ প্রতিষ্ঠানের জন্য আধুনিক ওয়েবসাইট, দ্রুতগতির অ্যান্ড্রয়েড অ্যাপ এবং কাস্টম সফটওয়্যার তৈরি করি।",
+    hero_desc: "আমরা আধুনিক ওয়েবসাইট এবং দ্রুতগতির অ্যান্ড্রয়েড অ্যাপ তৈরি করি।",
 
     // What We Build
     build_badge: "আমরা যা তৈরি করি",
